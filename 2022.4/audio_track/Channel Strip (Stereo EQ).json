@@ -1,0 +1,198 @@
+{
+    "name": "Channel Strip (Stereo EQ)",
+    "operations": {
+        "Audio Track Effect Container": {
+            "TypeDefinitions": {
+                "ints": {
+                    "aafUInt16": [
+                        "01010200-0000-0000-060e-2b3401040101",
+                        2,
+                        false
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    "AvidParameterByteOrder",
+                    ""
+                ],
+                "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AvidEffectID",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID"
+                ],
+                "Bypass": 0,
+                "NumberInputs": 1,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Sound",
+                "Identification": "63424df9-5ab5-49b4-abdd-8789838eb136",
+                "Description": "",
+                "Name": "Audio Track Effect Container"
+            },
+            "ComponentAttributeList": {},
+            "Parameters": [
+                [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "ConstantValue",
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    18761
+                ],
+                [
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "454646325f415544494f5f545241434b5f4546464543545f434f4e5441494e45520"
+                ]
+            ]
+        },
+        "Channel Strip": {
+            "TypeDefinitions": {
+                "ints": {
+                    "aafInt32": [
+                        "01010700-0000-0000-060e-2b3401040101",
+                        4,
+                        true
+                    ],
+                    "aafUInt16": [
+                        "01010200-0000-0000-060e-2b3401040101",
+                        2,
+                        false
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ]
+                },
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    "AvidParameterByteOrder",
+                    ""
+                ],
+                "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AvidEffectID",
+                    ""
+                ],
+                "3f13b13f-a883-497f-b5c1-88f247caaf11": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "Unknown name",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID"
+                ],
+                "NumberInputs": 0,
+                "OperationCategory": "OperationCategory_Effect",
+                "DataDefinition": "Sound",
+                "Identification": "065416a3-2244-3987-a3dc-03c617efb175",
+                "Description": "",
+                "Name": "Channel Strip"
+            },
+            "ComponentAttributeList": {
+                "INSERT": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                "_EFFECT_PLUGIN_PRESET": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "3c666163746f72792064656661756c743e"
+                ],
+                "_EFFECT_PLUGIN_SIDECHAIN": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                "_ATN_AUDIO_RTAS_EFFECT_CHUNK": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "54700ffffffff4449564174536843545253436b636c65436f6d706c65746520436f6e74726f6c7320537461746500000000011116c5f50726f63657373204f72646572000006c5f50686173652053776974636820496e2f4f75740000000645f496e707574205472696d00003e42000000645f466164657220566f6c756d65003e420000006c5f466164657220566f6c756d65205072652f506f7374000006c5f466164657220566f6c756d65204f6e2f4f666600000016c5f4551204f6e2f4f6666000016c5f46696c74657273204f6e2f4f6666000000016c5f44796e616d696373204f6e2f4f666600000016c5f44796e616d6963732052616e6765000000006c5f44796e616d6963732052657665616c00000006c5f45512052616e67650000006c5f45512052657665616c000006c5f4d657465727320546162000000006c5f4f7264657220546162000006c5f44796e616d696373205461620000016c5f455120546162000000006c5f436d7020496e2f4f757400000001645f436d7020526174696f03ff0000000645f436d70204b6e65650000000000645f436d702041747461636b2054696d650003f1a36e2eb1c4333645f436d702052656c656173652054696d65003fc9999999999999645f436d70204761696e204d616b65757000000000000645f436d70205468726573686f6c640c038000000645f436d702044657074680c0420000006c5f45787020496e2f4f757400000001645f45787020526174696f03ff0000000645f457870204b6e65650000000000645f4578702041747461636b2054696d650003ef4f8b588e368f1645f4578702052656c656173652054696d65003fc9999999999999645f457870205468726573686f6c640c04d000000645f4578702044657074680c042000000645f45787020486f6c642054696d6503f50624dd2f1a9fd645f45787020487973746572657369730000000000006c5f53632046696c74657220496e2f4f75740000016c5f53632046696c746572205479706500000000645f53632046696c746572204672657175656e637900040340000006c5f5363204c697374656e20496e2f4f75740000006c5f536320536f75726365000006c5f5363204465746563746f722054797065204176672f506b00000016c5f4551204c6f7720496e2f4f7574000016c5f4551204c6f7720547970650000000645f4551204c6f77204761696e0003e38000000645f4551204c6f77204672657175656e637900404499999942e23c645f4551204c6f772051003fdfffffffaf5676c5f4551204c6f77204c697374656e20496e2f4f75740000006c5f4551204c6f772d4d696420496e2f4f757400001645f4551204c6f772d4d6964204761696e0003e38000000645f4551204c6f772d4d6964204672657175656e63790040748fffffe9151a645f4551204c6f772d4d69642051003fdfffffffaf5676c5f4551204c6f772d4d6964204c697374656e20496e2f4f75740000006c5f455120486967682d4d696420496e2f4f757400000001645f455120486967682d4d6964204761696e003e38000000645f455120486967682d4d6964204672657175656e6379040a48c00177b18645f455120486967682d4d6964205103fdfffffffaf5676c5f455120486967682d4d6964204c697374656e20496e2f4f7574000006c5f4551204869676820496e2f4f7574000000016c5f455120486967682054797065000000645f45512048696768204761696e003e38000000645f45512048696768204672657175656e6379040c4820048ab74645f45512048696768205103fdfffffffaf5676c5f45512048696768204c697374656e20496e2f4f7574000006c5f46696c746572203120496e2f4f757400000006c5f46696c7465722031205479706500000645f46696c7465722031204672657175656e6379000040349999998be14f645f46696c7465722031205100003fdfffffffaf5676c5f46696c746572203120536c6f70652031322f32346442000000006c5f46696c7465722031204c697374656e20496e2f4f7574000000006c5f46696c746572203220496e2f4f757400000006c5f46696c7465722032205479706500001645f46696c7465722032204672657175656e6379000040d481fffffffffc645f46696c7465722032205100003fdfffffffaf5676c5f46696c746572203220536c6f70652031322f32346442000000006c5f46696c7465722032204c697374656e20496e2f4f757400000000"
+                ],
+                "_EFFECT_PLUGIN_CACHE_INFO": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Channel Strip ### Stereo EQ ### AAX"
+                ],
+                "_EFFECT_PLUGIN_TYPE": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AAXTrack"
+                ],
+                "_EFFECT_PLUGIN_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Channel Strip"
+                ],
+                "_EFFECT_PLUGIN_CLASS": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Stereo EQ"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1096173892"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1130910580"
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_VERSION": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "21.3.0.171"
+                ],
+                "_EFFECT_PLUGIN_SKU": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ]
+            },
+            "Parameters": [
+                [
+                    "3f13b13f-a883-497f-b5c1-88f247caaf11 Unknown name",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "ConstantValue",
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    18761
+                ],
+                [
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "617564696f2e727461732e313039363137333839322e313133303931303538302e313132393533343033360"
+                ]
+            ]
+        }
+    }
+}

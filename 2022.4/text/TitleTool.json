@@ -1,0 +1,265 @@
+{
+    "name": "TitleTool",
+    "operations": {
+        "Title_2": {
+            "TypeDefinitions": {
+                "ints": {
+                    "aafInt32": [
+                        "01010700-0000-0000-060e-2b3401040101",
+                        4,
+                        true
+                    ],
+                    "aafUInt16": [
+                        "01010200-0000-0000-060e-2b3401040101",
+                        2,
+                        false
+                    ]
+                },
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                },
+                "records": {
+                    "Rational": [
+                        "03010100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Numerator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ],
+                            [
+                                "Denominator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ]
+                        ]
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ]
+                },
+                "enums": {
+                    "Boolean": [
+                        "01040100-0000-0000-060e-2b3401040101",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        {
+                            "0": "False",
+                            "1": "True"
+                        }
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "1fdd2907-e48c-11d3-a078-006094eb75cb": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AvidGraphicFXAttr",
+                    ""
+                ],
+                "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    "AvidParameterByteOrder",
+                    ""
+                ],
+                "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AvidEffectID",
+                    ""
+                ],
+                "a2e74203-8527-4f5a-aa16-4bac4607510f": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_ORIG_CROP_BOTTOM",
+                    ""
+                ],
+                "4856d427-23ef-4437-bed2-e829977f1561": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_ORIG_CROP_RIGHT",
+                    ""
+                ],
+                "8d56812b-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "AFX_FIXED_ASPECT_U",
+                    ""
+                ],
+                "8d56814d-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "AFX_FG_KEY2_ENABLED_U",
+                    ""
+                ],
+                "8d568153-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "AFX_FG_KEY_SS_ENABLED_U",
+                    ""
+                ],
+                "1f99097e-13b8-4ae8-98fd-c3512850edff": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_ORIG_CROP_TOP",
+                    ""
+                ],
+                "760264de-f952-4525-9d3f-a4397080cb38": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_ORIG_CROP_LEFT",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "1fdd2907-e48c-11d3-a078-006094eb75cb AvidGraphicFXAttr",
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID"
+                ],
+                "Bypass": 0,
+                "NumberInputs": 3,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Picture",
+                "Identification": "2db619ef-7210-4e89-95d7-970336d72e8c",
+                "Description": "",
+                "Name": "Title_2"
+            },
+            "ComponentAttributeList": {
+                "_BORDER_FIXED": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                "_USE_DSK": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                "_ORIG_CROP_ENABLE": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                "_ORIG_CROP_LEFT": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    120
+                ],
+                "_ORIG_CROP_TOP": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    160
+                ],
+                "_ORIG_CROP_RIGHT": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -163
+                ],
+                "_ORIG_CROP_BOTTOM": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -188
+                ],
+                "_TITLE_FORMATS": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    2
+                ],
+                "_EFFECT_PLUGIN_TYPE": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AVX2"
+                ],
+                "_EFFECT_PLUGIN_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Title"
+                ],
+                "_EFFECT_PLUGIN_CLASS": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Title"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "ccbf7662-ac25-4f8f-8abb-0a32df222f71"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Avid Technology, Inc."
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "409578e0-2ee2-4f08-ac91-19df6b1cc737"
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_VERSION": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1.0"
+                ],
+                "_EFFECT_PLUGIN_SKU": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_MATCH": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "__PortableObject"
+                ],
+                "_IGNORE_TRACKING": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ]
+            },
+            "Parameters": [
+                [
+                    "a2e74203-8527-4f5a-aa16-4bac4607510f AFX_ORIG_CROP_BOTTOM",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "202952953/250000000"
+                ],
+                [
+                    "1fdd2907-e48c-11d3-a078-006094eb75cb AvidGraphicFXAttr",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "6aa00000100100112ffc0006aa0000000001000010000000010a00000100100a10650e4156494401312057494e204d430a10641584156494401095469746c655061676500004000701040000040804e0681892d103020004204000002706000000026020003c1800015417269616c00741ac69000000001000000000002000f000f0002f0002f000010000000900900900000005cc7860000010007c9510b00000000000000000000000000000000000000001000000000000110100101000000000000000000000000000000000000000000e41d25b0000000000000000000000000000000000000000000000000000000000000008b0a10641304156494401095469746c655465787400004000901040007040804e0e408921f0302000420400000506ffffffffffff060600000007060000000802000902000a020003f02000c02020d020004a02000e04010102a020002b06ffffffffffff02c020402d020002e0206402f0204030020003106ffffffffffff0320204033020003402064035020403b0280e5469746c65546f6f6c205465737401601000003b02f08b100300000000240200025023e804002000410120e00000000000000f00a10640e841564944010f5469746c6552656374616e676c65000004000a0104000704080b80681240e60302000420400000506ffffffffffff060600000007060000000802000902000a020003f02000c02020d020004a02000e04010102a020002b06ffffffffffff02c020402d020002e0206402f0204030020003106ffffffffffff0320204033020003402064035020401902000a10640dc4156494401095469746c654f76616c00004000b0104000704080bb1611141dd0302000420400000506ffffffffffff060600000007060000000802000902000a020003f02000c02020d020004a02000e04010102a020002b06ffffffffffff02c020402d020002e0206402f0204030020003106ffffffffffff032020403302000340206403502040a1064184156494401095469746c654c696e6500004000c0104000704080c12201102940302000420400000506ffffffffffff060600000007060000000802000902000a020003f02000c02020d020004a02000e04010102a020002b06ffffffffffff02c020402d020002e0206402f0204030020003106ffffffffffff032020403302000340206403502040f081f2210c12930b0202010020001101040100000004000000000a10640e841564944010f5469746c6552656374616e676c65000004000d0104000704081640881892d10302000420400000506ffffffffffff060600000007060000000802000902000a020003f02000c02020d020304a02000e04030102a020002b06ffffffffffff02c020402d020002e0206402f0204030020003106ffffffffffff0320204033020003402064035020401902000ff"
+                ],
+                [
+                    "4856d427-23ef-4437-bed2-e829977f1561 AFX_ORIG_CROP_RIGHT",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "836836837/1000000000"
+                ],
+                [
+                    "8d56812b-847e-11d5-935a-50f857c10000 AFX_FIXED_ASPECT_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    true
+                ],
+                [
+                    "8d56814d-847e-11d5-935a-50f857c10000 AFX_FG_KEY2_ENABLED_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    false
+                ],
+                [
+                    "8d568153-847e-11d5-935a-50f857c10000 AFX_FG_KEY_SS_ENABLED_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    false
+                ],
+                [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "ConstantValue",
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    18761
+                ],
+                [
+                    "1f99097e-13b8-4ae8-98fd-c3512850edff AFX_ORIG_CROP_TOP",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "1001001/6250000"
+                ],
+                [
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "454646325f424c454e445f475241504849430"
+                ],
+                [
+                    "760264de-f952-4525-9d3f-a4397080cb38 AFX_ORIG_CROP_LEFT",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "3003003/25000000"
+                ]
+            ]
+        }
+    }
+}

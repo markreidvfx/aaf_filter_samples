@@ -1,0 +1,556 @@
+{
+    "name": "3D PIP (Xpress 3D Effect)",
+    "operations": {
+        "3DPIP_v2": {
+            "TypeDefinitions": {
+                "ints": {
+                    "aafInt32": [
+                        "01010700-0000-0000-060e-2b3401040101",
+                        4,
+                        true
+                    ],
+                    "aafUInt16": [
+                        "01010200-0000-0000-060e-2b3401040101",
+                        2,
+                        false
+                    ],
+                    "aafUInt32": [
+                        "01010300-0000-0000-060e-2b3401040101",
+                        4,
+                        false
+                    ]
+                },
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                },
+                "records": {
+                    "Rational": [
+                        "03010100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Numerator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ],
+                            [
+                                "Denominator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ]
+                        ]
+                    ]
+                },
+                "enums": {
+                    "Boolean": [
+                        "01040100-0000-0000-060e-2b3401040101",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        {
+                            "0": "False",
+                            "1": "True"
+                        }
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    "AvidParameterByteOrder",
+                    ""
+                ],
+                "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AvidEffectID",
+                    ""
+                ],
+                "8d568200-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_FG_KEY_LUM_USE_RANGE_U",
+                    ""
+                ],
+                "8d568201-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_FG_KEY_LUM_RANGE_U",
+                    ""
+                ],
+                "8d56820b-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_CORNER_PIN_X0_U",
+                    ""
+                ],
+                "8d56820c-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_CORNER_PIN_Y0_U",
+                    ""
+                ],
+                "8d56820d-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_CORNER_PIN_X1_U",
+                    ""
+                ],
+                "8d56820e-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_CORNER_PIN_Y1_U",
+                    ""
+                ],
+                "8d56820f-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_CORNER_PIN_X2_U",
+                    ""
+                ],
+                "8d568210-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_CORNER_PIN_Y2_U",
+                    ""
+                ],
+                "8d568211-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_CORNER_PIN_X3_U",
+                    ""
+                ],
+                "8d568212-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_CORNER_PIN_Y3_U",
+                    ""
+                ],
+                "8d568225-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_CUSTOM_HIGHLIGHT_L_U",
+                    ""
+                ],
+                "8d56812b-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "AFX_FIXED_ASPECT_U",
+                    ""
+                ],
+                "8d56822d-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_SPILL_REPLACEMENT_L_U",
+                    ""
+                ],
+                "8d568233-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_ERODE_FILTER_WIDTH_U",
+                    ""
+                ],
+                "8d568234-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_ERODE_MIDPOINT_U",
+                    ""
+                ],
+                "8d568235-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_ERODE_SOFTNESS_U",
+                    ""
+                ],
+                "8d56828e-847e-11d5-935a-50f857c10000": [
+                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                    "DVE_TRACKING_POS_U",
+                    ""
+                ],
+                "8d568197-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_SHAPE_U",
+                    ""
+                ],
+                "8d5681b2-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "DVE_SCALE_ENABLED_U",
+                    ""
+                ],
+                "8d5681b3-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_SCALE_X_U",
+                    ""
+                ],
+                "8d5681b4-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_SCALE_Y_U",
+                    ""
+                ],
+                "8d5681c7-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_PRSP_Z_U",
+                    ""
+                ],
+                "8d5681d0-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "DVE_BORDER_ENABLED_U",
+                    ""
+                ],
+                "8d5681d8-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_HLTE_RADIUS_U",
+                    ""
+                ],
+                "8d5681d9-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_HLTE_INTSTY_U",
+                    ""
+                ],
+                "8d5681de-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_HLTE_SOFT_U",
+                    ""
+                ],
+                "8d5681e0-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_DFCS_HORIZ_U",
+                    ""
+                ],
+                "8d5681e1-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_DFCS_VERT_U",
+                    ""
+                ],
+                "8d5681ed-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_MT_WARP_FOREGROUND_U",
+                    ""
+                ],
+                "8d5681ee-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_MT_KEY_OPACITY_U",
+                    ""
+                ],
+                "8d5681f7-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_FG_KEY_HUE_ANGLE_U",
+                    ""
+                ],
+                "8d5681f8-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_FG_KEY_SAT_U",
+                    ""
+                ],
+                "8d5681f9-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_FG_KEY_LUM_U",
+                    ""
+                ],
+                "8d5681fa-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_FG_KEY_DISC_U",
+                    ""
+                ],
+                "8d5681fb-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_FG_KEY_LOW_SAT_U",
+                    ""
+                ],
+                "8d5681fc-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_FG_KEY_HIGH_SAT_U",
+                    ""
+                ],
+                "8d5681fe-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_FG_KEY_LUM_THRESH_U",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID"
+                ],
+                "Bypass": 1,
+                "NumberInputs": 2,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Picture",
+                "Identification": "ad67c785-6b26-4501-bc21-a51a31fdc8fa",
+                "Description": "",
+                "Name": "3DPIP_v2"
+            },
+            "ComponentAttributeList": {
+                "_BORDER_FIXED": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                "_EFFECT_PLUGIN_TYPE": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Unknown"
+                ],
+                "_EFFECT_PLUGIN_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "3D PIP"
+                ],
+                "_EFFECT_PLUGIN_CLASS": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Xpress 3D Effect"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_VERSION": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_SKU": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_IGNORE_TRACKING": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ]
+            },
+            "Parameters": [
+                [
+                    "8d568200-847e-11d5-935a-50f857c10000 DVE_FG_KEY_LUM_USE_RANGE_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "1"
+                ],
+                [
+                    "8d568201-847e-11d5-935a-50f857c10000 DVE_FG_KEY_LUM_RANGE_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "80"
+                ],
+                [
+                    "8d56820b-847e-11d5-935a-50f857c10000 DVE_CORNER_PIN_X0_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "-999/2"
+                ],
+                [
+                    "8d56820c-847e-11d5-935a-50f857c10000 DVE_CORNER_PIN_Y0_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "999/2"
+                ],
+                [
+                    "8d56820d-847e-11d5-935a-50f857c10000 DVE_CORNER_PIN_X1_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "999/2"
+                ],
+                [
+                    "8d56820e-847e-11d5-935a-50f857c10000 DVE_CORNER_PIN_Y1_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "999/2"
+                ],
+                [
+                    "8d56820f-847e-11d5-935a-50f857c10000 DVE_CORNER_PIN_X2_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "999/2"
+                ],
+                [
+                    "8d568210-847e-11d5-935a-50f857c10000 DVE_CORNER_PIN_Y2_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "-999/2"
+                ],
+                [
+                    "8d568211-847e-11d5-935a-50f857c10000 DVE_CORNER_PIN_X3_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "-999/2"
+                ],
+                [
+                    "8d568212-847e-11d5-935a-50f857c10000 DVE_CORNER_PIN_Y3_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "-999/2"
+                ],
+                [
+                    "8d568225-847e-11d5-935a-50f857c10000 DVE_CUSTOM_HIGHLIGHT_L_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "255"
+                ],
+                [
+                    "8d56812b-847e-11d5-935a-50f857c10000 AFX_FIXED_ASPECT_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    true
+                ],
+                [
+                    "8d56822d-847e-11d5-935a-50f857c10000 DVE_SPILL_REPLACEMENT_L_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "128"
+                ],
+                [
+                    "8d568233-847e-11d5-935a-50f857c10000 DVE_ERODE_FILTER_WIDTH_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "3"
+                ],
+                [
+                    "8d568234-847e-11d5-935a-50f857c10000 DVE_ERODE_MIDPOINT_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "127"
+                ],
+                [
+                    "8d568235-847e-11d5-935a-50f857c10000 DVE_ERODE_SOFTNESS_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "127"
+                ],
+                [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "ConstantValue",
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    18761
+                ],
+                [
+                    "8d56828e-847e-11d5-935a-50f857c10000 DVE_TRACKING_POS_U",
+                    "ConstantValue",
+                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                    0
+                ],
+                [
+                    "8d568197-847e-11d5-935a-50f857c10000 DVE_SHAPE_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "1"
+                ],
+                [
+                    "8d5681b2-847e-11d5-935a-50f857c10000 DVE_SCALE_ENABLED_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    true
+                ],
+                [
+                    "8d5681b3-847e-11d5-935a-50f857c10000 DVE_SCALE_X_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "50"
+                ],
+                [
+                    "8d5681b4-847e-11d5-935a-50f857c10000 DVE_SCALE_Y_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "50"
+                ],
+                [
+                    "8d5681c7-847e-11d5-935a-50f857c10000 DVE_PRSP_Z_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "999/4"
+                ],
+                [
+                    "8d5681d0-847e-11d5-935a-50f857c10000 DVE_BORDER_ENABLED_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    false
+                ],
+                [
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "454646325f33445049500"
+                ],
+                [
+                    "8d5681d8-847e-11d5-935a-50f857c10000 DVE_HLTE_RADIUS_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "50"
+                ],
+                [
+                    "8d5681d9-847e-11d5-935a-50f857c10000 DVE_HLTE_INTSTY_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "50"
+                ],
+                [
+                    "8d5681de-847e-11d5-935a-50f857c10000 DVE_HLTE_SOFT_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "50"
+                ],
+                [
+                    "8d5681e0-847e-11d5-935a-50f857c10000 DVE_DFCS_HORIZ_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "10"
+                ],
+                [
+                    "8d5681e1-847e-11d5-935a-50f857c10000 DVE_DFCS_VERT_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "10"
+                ],
+                [
+                    "8d5681ed-847e-11d5-935a-50f857c10000 DVE_MT_WARP_FOREGROUND_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "1"
+                ],
+                [
+                    "8d5681ee-847e-11d5-935a-50f857c10000 DVE_MT_KEY_OPACITY_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "100"
+                ],
+                [
+                    "8d5681f7-847e-11d5-935a-50f857c10000 DVE_FG_KEY_HUE_ANGLE_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "155"
+                ],
+                [
+                    "8d5681f8-847e-11d5-935a-50f857c10000 DVE_FG_KEY_SAT_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "255"
+                ],
+                [
+                    "8d5681f9-847e-11d5-935a-50f857c10000 DVE_FG_KEY_LUM_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "255"
+                ],
+                [
+                    "8d5681fa-847e-11d5-935a-50f857c10000 DVE_FG_KEY_DISC_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "45"
+                ],
+                [
+                    "8d5681fb-847e-11d5-935a-50f857c10000 DVE_FG_KEY_LOW_SAT_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "20"
+                ],
+                [
+                    "8d5681fc-847e-11d5-935a-50f857c10000 DVE_FG_KEY_HIGH_SAT_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "255"
+                ],
+                [
+                    "8d5681fe-847e-11d5-935a-50f857c10000 DVE_FG_KEY_LUM_THRESH_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "128"
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,188 @@
+{
+    "name": "Freeze Frame (Timewarp)",
+    "operations": {
+        "Motion Control": {
+            "TypeDefinitions": {
+                "ints": {
+                    "aafInt32": [
+                        "01010700-0000-0000-060e-2b3401040101",
+                        4,
+                        true
+                    ]
+                },
+                "records": {
+                    "Rational": [
+                        "03010100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Numerator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ],
+                            [
+                                "Denominator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ]
+                        ]
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "f7ffed29-fc8e-43ed-943a-4b57b5c157ee": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AvidMotionPulldown",
+                    ""
+                ],
+                "8dde1839-6862-4874-a1e9-4fbd1164f22a": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AvidMotionOutputFormat",
+                    ""
+                ],
+                "5b22ff71-c51b-11d3-a069-006094eb75cb": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AvidPhase",
+                    ""
+                ],
+                "72559a80-24d7-11d3-8a50-0050040ef7d2": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "SpeedRatio",
+                    ""
+                ],
+                "1c5a02d5-e503-4ca6-8617-d7914bb8ac03": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AvidMotionInputFormat",
+                    ""
+                ],
+                "8d56827c-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "PARAM_SPEED_MAP_U",
+                    ""
+                ],
+                "8d56827d-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "PARAM_SPEED_OFFSET_MAP_U",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "f7ffed29-fc8e-43ed-943a-4b57b5c157ee AvidMotionPulldown",
+                    "8dde1839-6862-4874-a1e9-4fbd1164f22a AvidMotionOutputFormat",
+                    "5b22ff71-c51b-11d3-a069-006094eb75cb AvidPhase",
+                    "72559a80-24d7-11d3-8a50-0050040ef7d2 SpeedRatio",
+                    "1c5a02d5-e503-4ca6-8617-d7914bb8ac03 AvidMotionInputFormat"
+                ],
+                "Bypass": 0,
+                "NumberInputs": 1,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": true,
+                "DataDefinition": "Picture",
+                "Identification": "9d2ea890-0968-11d3-8a38-0050040ef7d2",
+                "Description": "",
+                "Name": "Motion Control"
+            },
+            "ComponentAttributeList": {
+                "_MFX_INPUT_FORMAT": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    2
+                ],
+                "_MFX_OUTPUT_FORMAT": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    2
+                ],
+                "_MFX_VIEW_SPD_TOP": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    100
+                ],
+                "_MFX_VIEW_SPD_BOTTOM": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -100
+                ],
+                "_SFX_IGNORE_RENDER_SETTING": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                "_SFX_RENDER": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    2
+                ],
+                "_NEW_SHAPE_REFERENCE_FRAME": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ]
+            },
+            "Parameters": [
+                [
+                    "f7ffed29-fc8e-43ed-943a-4b57b5c157ee AvidMotionPulldown",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8dde1839-6862-4874-a1e9-4fbd1164f22a AvidMotionOutputFormat",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    2
+                ],
+                [
+                    "5b22ff71-c51b-11d3-a069-006094eb75cb AvidPhase",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8d56827c-847e-11d5-935a-50f857c10000 PARAM_SPEED_MAP_U",
+                    "VaryingValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AvidCubicInterpolator",
+                    [
+                        {
+                            "Time": "0",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "0"
+                            ],
+                            "PARAM_SPEED_MAP_U": [
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                                1
+                            ]
+                        }
+                    ]
+                ],
+                [
+                    "8d56827d-847e-11d5-935a-50f857c10000 PARAM_SPEED_OFFSET_MAP_U",
+                    "VaryingValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "LinearInterp",
+                    [
+                        {
+                            "Time": "0",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "0"
+                            ]
+                        },
+                        {
+                            "Time": "252/251",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "0"
+                            ]
+                        }
+                    ]
+                ],
+                [
+                    "72559a80-24d7-11d3-8a50-0050040ef7d2 SpeedRatio",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "252"
+                ],
+                [
+                    "1c5a02d5-e503-4ca6-8617-d7914bb8ac03 AvidMotionInputFormat",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    2
+                ]
+            ]
+        }
+    }
+}

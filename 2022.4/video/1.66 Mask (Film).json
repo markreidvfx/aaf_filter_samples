@@ -1,0 +1,177 @@
+{
+    "name": "1.66 Mask (Film)",
+    "operations": {
+        "Mask166_2": {
+            "TypeDefinitions": {
+                "ints": {
+                    "aafInt32": [
+                        "01010700-0000-0000-060e-2b3401040101",
+                        4,
+                        true
+                    ],
+                    "aafUInt16": [
+                        "01010200-0000-0000-060e-2b3401040101",
+                        2,
+                        false
+                    ]
+                },
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                },
+                "records": {
+                    "Rational": [
+                        "03010100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Numerator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ],
+                            [
+                                "Denominator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ]
+                        ]
+                    ]
+                },
+                "enums": {
+                    "Boolean": [
+                        "01040100-0000-0000-060e-2b3401040101",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        {
+                            "0": "False",
+                            "1": "True"
+                        }
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    "AvidParameterByteOrder",
+                    ""
+                ],
+                "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AvidEffectID",
+                    ""
+                ],
+                "8d56812a-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_SCALE_Y_U",
+                    ""
+                ],
+                "8d56814d-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "AFX_FG_KEY2_ENABLED_U",
+                    ""
+                ],
+                "8d568153-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "AFX_FG_KEY_SS_ENABLED_U",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID"
+                ],
+                "Bypass": 0,
+                "NumberInputs": 1,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Picture",
+                "Identification": "fe1b2508-a68c-329d-9d7b-c777d2b5b65a",
+                "Description": "",
+                "Name": "Mask166_2"
+            },
+            "ComponentAttributeList": {
+                "_BORDER_FIXED": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                "_EFFECT_PLUGIN_TYPE": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AVX2"
+                ],
+                "_EFFECT_PLUGIN_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1.66 Mask"
+                ],
+                "_EFFECT_PLUGIN_CLASS": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Film"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "ccbf7662-ac25-4f8f-8abb-0a32df222f71"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Avid Technology, Inc."
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "409578e0-2ee2-4f08-ac91-19df6b1cc737"
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_VERSION": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1.0"
+                ],
+                "_EFFECT_PLUGIN_SKU": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_IGNORE_TRACKING": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ]
+            },
+            "Parameters": [
+                [
+                    "8d56812a-847e-11d5-935a-50f857c10000 AFX_SCALE_Y_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "80"
+                ],
+                [
+                    "8d56814d-847e-11d5-935a-50f857c10000 AFX_FG_KEY2_ENABLED_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    false
+                ],
+                [
+                    "8d568153-847e-11d5-935a-50f857c10000 AFX_FG_KEY_SS_ENABLED_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    false
+                ],
+                [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "ConstantValue",
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    18761
+                ],
+                [
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "454646325f424c454e445f4d41534b5f3136360"
+                ]
+            ]
+        }
+    }
+}

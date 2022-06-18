@@ -1,0 +1,284 @@
+{
+    "name": "Dyn3 Expander/Gate (Dyn3 Expander/Gate)",
+    "operations": {
+        "Audio Suite Plugin": {
+            "TypeDefinitions": {
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ],
+                    "AudioSuitePIChunkData": [
+                        "5cf19caf-ef83-11d3-9ff5-0004ac969f50",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ],
+                    "AudioSuitePIChunkArray": [
+                        "4e4d8f60-eefd-11d3-9ff5-0004ac969f50",
+                        "4e4d8f5f-eefd-11d3-9ff5-0004ac969f50 AudioSuitePlugInChunk"
+                    ]
+                },
+                "fixed_arrays": {
+                    "AvidString4": [
+                        "0f96cb41-2aa8-11d4-a00f-0004ac969f50",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        4
+                    ],
+                    "AvidWideString32": [
+                        "3271a34f-f3a1-11d3-9ff5-0004ac969f50",
+                        "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                        32
+                    ]
+                },
+                "records": {
+                    "AudioSuitePlugInChunk": [
+                        "4e4d8f5f-eefd-11d3-9ff5-0004ac969f50",
+                        [
+                            [
+                                "Version",
+                                "01010300-0000-0000-060e-2b3401040101 aafUInt32"
+                            ],
+                            [
+                                "ManufacturerID",
+                                "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4"
+                            ],
+                            [
+                                "ProductID",
+                                "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4"
+                            ],
+                            [
+                                "PlugInID",
+                                "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4"
+                            ],
+                            [
+                                "ChunkID",
+                                "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4"
+                            ],
+                            [
+                                "Name",
+                                "3271a34f-f3a1-11d3-9ff5-0004ac969f50 AvidWideString32"
+                            ],
+                            [
+                                "ChunkDataUID",
+                                "01030100-0000-0000-060e-2b3401040101 AUID"
+                            ]
+                        ]
+                    ],
+                    "AUID": [
+                        "01030100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Data1",
+                                "01010300-0000-0000-060e-2b3401040101 aafUInt32"
+                            ],
+                            [
+                                "Data2",
+                                "01010200-0000-0000-060e-2b3401040101 aafUInt16"
+                            ],
+                            [
+                                "Data3",
+                                "01010200-0000-0000-060e-2b3401040101 aafUInt16"
+                            ],
+                            [
+                                "Data4",
+                                "04010800-0000-0000-060e-2b3401040101 aafUInt8Array8"
+                            ]
+                        ]
+                    ]
+                },
+                "ints": {
+                    "aafUInt32": [
+                        "01010300-0000-0000-060e-2b3401040101",
+                        4,
+                        false
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "7c254c09-ee1e-11d3-9ff5-0004ac969f50": [
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "AudioASPIManufacturerID",
+                    ""
+                ],
+                "80bcd031-eefa-11d3-9ff5-0004ac969f50": [
+                    "5cf19caf-ef83-11d3-9ff5-0004ac969f50 AudioSuitePIChunkData",
+                    "AudioASPIPlugInChunkDataID",
+                    ""
+                ],
+                "338a2f41-ee1e-11d3-9ff5-0004ac969f50": [
+                    "4e4d8f60-eefd-11d3-9ff5-0004ac969f50 AudioSuitePIChunkArray",
+                    "AvidASPIChunks",
+                    ""
+                ],
+                "76401b7f-ee1e-11d3-9ff5-0004ac969f50": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AvidASPIPlugInName",
+                    ""
+                ],
+                "81ad80dd-ee1e-11d3-9ff5-0004ac969f50": [
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "AudioASPIProductID",
+                    ""
+                ],
+                "e735afe6-d828-45c3-b526-44e7ac24c691": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AudioASPIPresetPathID",
+                    ""
+                ],
+                "85ffc3fd-ee1e-11d3-9ff5-0004ac969f50": [
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "AudioASPIPlugInID",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "7c254c09-ee1e-11d3-9ff5-0004ac969f50 AudioASPIManufacturerID",
+                    "80bcd031-eefa-11d3-9ff5-0004ac969f50 AudioASPIPlugInChunkDataID",
+                    "338a2f41-ee1e-11d3-9ff5-0004ac969f50 AvidASPIChunks",
+                    "76401b7f-ee1e-11d3-9ff5-0004ac969f50 AvidASPIPlugInName",
+                    "81ad80dd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIProductID",
+                    "e735afe6-d828-45c3-b526-44e7ac24c691 AudioASPIPresetPathID",
+                    "85ffc3fd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIPlugInID"
+                ],
+                "Bypass": 0,
+                "NumberInputs": 1,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Sound",
+                "Identification": "f1db0f24-8d64-11d3-80df-006008143e6f",
+                "Description": "",
+                "Name": "Audio Suite Plugin"
+            },
+            "ComponentAttributeList": {
+                "_EFFECT_PLUGIN_TYPE": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AAXClip"
+                ],
+                "_EFFECT_PLUGIN_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Dyn3 Expander/Gate"
+                ],
+                "_EFFECT_PLUGIN_CLASS": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Dynamics"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1147758441"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1684943717"
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_VERSION": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "21.3.0.171"
+                ],
+                "_EFFECT_PLUGIN_SKU": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_CACHE_INFO": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Dyn3 Expander/Gate ### AudioSuite"
+                ],
+                "_AUDIO_SUITE_EFFECT_0_ALL_CHUNKS": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "10100ffffffff6967694465336e64534133456b636c6517436f6d706c65746520436f6e74726f6c73205374617465000000001111645f736c644700c044000000645f736c643200407ffffffd56e4c645f736c6431003f847ae140000645f736c6433003fb47ae140000645f736c6444003fa9999999cd628b645f736c644300c0380000006c5f506873650000006c5f4c6b4168000001645f486946460040d387fffffffffb6c5f486952470000016c5f48694645000000645f4c6f46460040340000006c5f4c6f52470000016c5f4c6f46450000006c5f736c6445000000"
+                ]
+            },
+            "Parameters": [
+                [
+                    "7c254c09-ee1e-11d3-9ff5-0004ac969f50 AudioASPIManufacturerID",
+                    "ConstantValue",
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "69676944"
+                ],
+                [
+                    "80bcd031-eefa-11d3-9ff5-0004ac969f50 AudioASPIPlugInChunkDataID",
+                    "ConstantValue",
+                    "5cf19caf-ef83-11d3-9ff5-0004ac969f50 AudioSuitePIChunkData",
+                    "1111645f736c644700c044000000645f736c643200407ffffffd56e4c645f736c6431003f847ae140000645f736c6433003fb47ae140000645f736c6444003fa9999999cd628b645f736c644300c0380000006c5f506873650000006c5f4c6b4168000001645f486946460040d387fffffffffb6c5f486952470000016c5f48694645000000645f4c6f46460040340000006c5f4c6f52470000016c5f4c6f46450000006c5f736c6445000000"
+                ],
+                [
+                    "338a2f41-ee1e-11d3-9ff5-0004ac969f50 AvidASPIChunks",
+                    "ConstantValue",
+                    "4e4d8f60-eefd-11d3-9ff5-0004ac969f50 AudioSuitePIChunkArray",
+                    [
+                        [
+                            "4e4d8f5f-eefd-11d3-9ff5-0004ac969f50 AudioSuitePlugInChunk",
+                            [
+                                [
+                                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                                    4294967295
+                                ],
+                                [
+                                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                                    "69676944"
+                                ],
+                                [
+                                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                                    "65336e64"
+                                ],
+                                [
+                                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                                    "53413345"
+                                ],
+                                [
+                                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                                    "6b636c65"
+                                ],
+                                [
+                                    "3271a34f-f3a1-11d3-9ff5-0004ac969f50 AvidWideString32",
+                                    "436f6d706c65746520436f6e74726f6c73205374617465000000000000000000"
+                                ],
+                                [
+                                    "01030100-0000-0000-060e-2b3401040101 AUID",
+                                    "80bcd031-eefa-11d3-9ff5-0004ac969f50"
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    "76401b7f-ee1e-11d3-9ff5-0004ac969f50 AvidASPIPlugInName",
+                    "ConstantValue",
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Dyn3 Expander/Gate"
+                ],
+                [
+                    "81ad80dd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIProductID",
+                    "ConstantValue",
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "65336e64"
+                ],
+                [
+                    "e735afe6-d828-45c3-b526-44e7ac24c691 AudioASPIPresetPathID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "3c666163746f72792064656661756c743e"
+                ],
+                [
+                    "85ffc3fd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIPlugInID",
+                    "ConstantValue",
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "53413345"
+                ]
+            ]
+        }
+    }
+}

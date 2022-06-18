@@ -1,0 +1,175 @@
+{
+    "name": "Rollup (Illusion FX)",
+    "operations": {
+        "Rollup": {
+            "TypeDefinitions": {
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                },
+                "ints": {
+                    "aafInt32": [
+                        "01010700-0000-0000-060e-2b3401040101",
+                        4,
+                        true
+                    ],
+                    "aafUInt16": [
+                        "01010200-0000-0000-060e-2b3401040101",
+                        2,
+                        false
+                    ]
+                },
+                "records": {
+                    "Rational": [
+                        "03010100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Numerator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ],
+                            [
+                                "Denominator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ]
+                        ]
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    "AvidParameterByteOrder",
+                    ""
+                ],
+                "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AvidEffectID",
+                    ""
+                ],
+                "8ba0916a-7c0b-41e4-b2da-c817048cbf5d": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_TRANS_LEN",
+                    ""
+                ],
+                "8af7a5dc-367b-4919-afc7-5ca00a5bd558": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "MC AVX2 EFFECT VERSION",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID"
+                ],
+                "NumberInputs": 2,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Picture",
+                "Identification": "bd6a5480-005e-35f1-927b-10df2f34835a",
+                "Description": "",
+                "Name": "Rollup"
+            },
+            "ComponentAttributeList": {
+                "_EFFECT_PLUGIN_CACHE_INFO": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Rollup ### Illusion FX ### AVX2 ### Version 1.0 ### Avid Technology, Inc."
+                ],
+                "_EFFECT_PLUGIN_TYPE": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AVX2"
+                ],
+                "_EFFECT_PLUGIN_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Rollup"
+                ],
+                "_EFFECT_PLUGIN_CLASS": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Illusion FX"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "ccbf7662-ac25-4f8f-8abb-0a32df222f71"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Avid Technology, Inc."
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "409578e0-2ee2-4f08-ac91-19df6b1cc737"
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_VERSION": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1.0"
+                ],
+                "_EFFECT_PLUGIN_SKU": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_BORDER_FIXED": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                "_IGNORE_TRACKING": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ]
+            },
+            "Parameters": [
+                [
+                    "8ba0916a-7c0b-41e4-b2da-c817048cbf5d AFX_TRANS_LEN",
+                    "VaryingValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "LinearInterp",
+                    [
+                        {
+                            "Time": "0",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "0"
+                            ]
+                        },
+                        {
+                            "Time": "1",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "1"
+                            ]
+                        }
+                    ]
+                ],
+                [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "ConstantValue",
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    18761
+                ],
+                [
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "42443641353438302d303035452d333546312d393237422d3130444632463334383335410"
+                ],
+                [
+                    "8af7a5dc-367b-4919-afc7-5ca00a5bd558 MC AVX2 EFFECT VERSION",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ]
+            ]
+        }
+    }
+}

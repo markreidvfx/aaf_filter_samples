@@ -1,0 +1,150 @@
+{
+    "name": "Reverse (Reverse)",
+    "operations": {
+        "Audio Suite Plugin": {
+            "TypeDefinitions": {
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ]
+                },
+                "fixed_arrays": {
+                    "AvidString4": [
+                        "0f96cb41-2aa8-11d4-a00f-0004ac969f50",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        4
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "7c254c09-ee1e-11d3-9ff5-0004ac969f50": [
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "AudioASPIManufacturerID",
+                    ""
+                ],
+                "76401b7f-ee1e-11d3-9ff5-0004ac969f50": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AvidASPIPlugInName",
+                    ""
+                ],
+                "81ad80dd-ee1e-11d3-9ff5-0004ac969f50": [
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "AudioASPIProductID",
+                    ""
+                ],
+                "e735afe6-d828-45c3-b526-44e7ac24c691": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AudioASPIPresetPathID",
+                    ""
+                ],
+                "85ffc3fd-ee1e-11d3-9ff5-0004ac969f50": [
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "AudioASPIPlugInID",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "7c254c09-ee1e-11d3-9ff5-0004ac969f50 AudioASPIManufacturerID",
+                    "76401b7f-ee1e-11d3-9ff5-0004ac969f50 AvidASPIPlugInName",
+                    "81ad80dd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIProductID",
+                    "e735afe6-d828-45c3-b526-44e7ac24c691 AudioASPIPresetPathID",
+                    "85ffc3fd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIPlugInID"
+                ],
+                "Bypass": 0,
+                "NumberInputs": 1,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Sound",
+                "Identification": "f1db0f24-8d64-11d3-80df-006008143e6f",
+                "Description": "",
+                "Name": "Audio Suite Plugin"
+            },
+            "ComponentAttributeList": {
+                "_EFFECT_PLUGIN_TYPE": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AAXClip"
+                ],
+                "_EFFECT_PLUGIN_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Reverse"
+                ],
+                "_EFFECT_PLUGIN_CLASS": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Other"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1147758441"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1314018336"
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_VERSION": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "21.3.0.171"
+                ],
+                "_EFFECT_PLUGIN_SKU": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_CACHE_INFO": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Reverse ### AudioSuite"
+                ],
+                "_AUDIO_SUITE_EFFECT_0_ALL_CHUNKS": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "00000000000000000000000000000000000000000000000000000000"
+                ]
+            },
+            "Parameters": [
+                [
+                    "7c254c09-ee1e-11d3-9ff5-0004ac969f50 AudioASPIManufacturerID",
+                    "ConstantValue",
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "69676944"
+                ],
+                [
+                    "76401b7f-ee1e-11d3-9ff5-0004ac969f50 AvidASPIPlugInName",
+                    "ConstantValue",
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Reverse"
+                ],
+                [
+                    "81ad80dd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIProductID",
+                    "ConstantValue",
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "2054524e"
+                ],
+                [
+                    "e735afe6-d828-45c3-b526-44e7ac24c691 AudioASPIPresetPathID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "3c666163746f72792064656661756c743e"
+                ],
+                [
+                    "85ffc3fd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIPlugInID",
+                    "ConstantValue",
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "53525652"
+                ]
+            ]
+        }
+    }
+}

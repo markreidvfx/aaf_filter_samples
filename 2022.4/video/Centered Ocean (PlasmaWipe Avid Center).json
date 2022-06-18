@@ -1,0 +1,261 @@
+{
+    "name": "Centered Ocean (PlasmaWipe Avid Center)",
+    "operations": {
+        "Plasma Wipe": {
+            "TypeDefinitions": {
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                },
+                "ints": {
+                    "aafInt32": [
+                        "01010700-0000-0000-060e-2b3401040101",
+                        4,
+                        true
+                    ],
+                    "aafUInt16": [
+                        "01010200-0000-0000-060e-2b3401040101",
+                        2,
+                        false
+                    ],
+                    "aafInt8": [
+                        "01010500-0000-0000-060e-2b3401040101",
+                        1,
+                        true
+                    ]
+                },
+                "records": {
+                    "Rational": [
+                        "03010100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Numerator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ],
+                            [
+                                "Denominator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ]
+                        ]
+                    ]
+                },
+                "fixed_arrays": {
+                    "AvidBounds": [
+                        "8bc42732-6bab-11d3-80cf-006008143e6f",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        48
+                    ],
+                    "AvidColor": [
+                        "8bc42733-6bab-11d3-80cf-006008143e6f",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        68
+                    ],
+                    "AvidGlobalKeyFrame": [
+                        "09997778-960e-11d3-a04e-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        16
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ]
+                },
+                "enums": {
+                    "Boolean": [
+                        "01040100-0000-0000-060e-2b3401040101",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        {
+                            "0": "False",
+                            "1": "True"
+                        }
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "e4962320-2267-11d3-8a4c-0050040ef7d2": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "Level",
+                    ""
+                ],
+                "8bc42735-6bab-11d3-80cf-006008143e6f": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AvidBorderWidth",
+                    ""
+                ],
+                "8bc42736-6bab-11d3-80cf-006008143e6f": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AvidBorderSoft",
+                    ""
+                ],
+                "8bc4273c-6bab-11d3-80cf-006008143e6f": [
+                    "8bc42732-6bab-11d3-80cf-006008143e6f AvidBounds",
+                    "AvidBounds",
+                    ""
+                ],
+                "8bc4273d-6bab-11d3-80cf-006008143e6f": [
+                    "8bc42733-6bab-11d3-80cf-006008143e6f AvidColor",
+                    "AvidColor",
+                    ""
+                ],
+                "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    "AvidParameterByteOrder",
+                    ""
+                ],
+                "09997779-960e-11d3-a04e-006094eb75cb": [
+                    "09997778-960e-11d3-a04e-006094eb75cb AvidGlobalKeyFrame",
+                    "AvidGlobalKeyFrame",
+                    ""
+                ],
+                "45312ed2-a1b8-11d3-a05a-006094eb75cb": [
+                    "01010500-0000-0000-060e-2b3401040101 aafInt8",
+                    "AvidEnableKeyFlagsKeyFrame",
+                    ""
+                ],
+                "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AvidEffectID",
+                    ""
+                ],
+                "386e92f8-978e-11d3-80e1-006008143e6f": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "AvidSelectedKeyFrame",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "e4962320-2267-11d3-8a4c-0050040ef7d2 Level",
+                    "8bc42735-6bab-11d3-80cf-006008143e6f AvidBorderWidth",
+                    "8bc42736-6bab-11d3-80cf-006008143e6f AvidBorderSoft",
+                    "8bc4273c-6bab-11d3-80cf-006008143e6f AvidBounds",
+                    "8bc4273d-6bab-11d3-80cf-006008143e6f AvidColor",
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "09997779-960e-11d3-a04e-006094eb75cb AvidGlobalKeyFrame",
+                    "45312ed2-a1b8-11d3-a05a-006094eb75cb AvidEnableKeyFlagsKeyFrame",
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID",
+                    "386e92f8-978e-11d3-80e1-006008143e6f AvidSelectedKeyFrame"
+                ],
+                "NumberInputs": -1,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Picture",
+                "Identification": "569c76d6-64ba-4552-9027-fff19d726191",
+                "Description": "",
+                "Name": "Plasma Wipe"
+            },
+            "ComponentAttributeList": {
+                "_EFFECT_PLUGIN_TYPE": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Unknown"
+                ],
+                "_EFFECT_PLUGIN_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Center Ocean"
+                ],
+                "_EFFECT_PLUGIN_CLASS": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "PlasmaWipe Avid Center"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_VERSION": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_SKU": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_BORDER_FIXED": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                "_IGNORE_TRACKING": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ]
+            },
+            "Parameters": [
+                [
+                    "e4962320-2267-11d3-8a4c-0050040ef7d2 Level",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "536870912/1073741824"
+                ],
+                [
+                    "8bc42735-6bab-11d3-80cf-006008143e6f AvidBorderWidth",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8bc42736-6bab-11d3-80cf-006008143e6f AvidBorderSoft",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    32
+                ],
+                [
+                    "8bc4273c-6bab-11d3-80cf-006008143e6f AvidBounds",
+                    "ConstantValue",
+                    "8bc42732-6bab-11d3-80cf-006008143e6f AvidBounds",
+                    "00cfe001000cfe001000f41001000f4100100000000000000000"
+                ],
+                [
+                    "8bc4273d-6bab-11d3-80cf-006008143e6f AvidColor",
+                    "ConstantValue",
+                    "8bc42733-6bab-11d3-80cf-006008143e6f AvidColor",
+                    "200000ff000ff000000000000000000000000000000000000000000000000000000000"
+                ],
+                [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "ConstantValue",
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    18761
+                ],
+                [
+                    "09997779-960e-11d3-a04e-006094eb75cb AvidGlobalKeyFrame",
+                    "ConstantValue",
+                    "09997778-960e-11d3-a04e-006094eb75cb AvidGlobalKeyFrame",
+                    "0000000010100100"
+                ],
+                [
+                    "45312ed2-a1b8-11d3-a05a-006094eb75cb AvidEnableKeyFlagsKeyFrame",
+                    "ConstantValue",
+                    "01010500-0000-0000-060e-2b3401040101 aafInt8",
+                    0
+                ],
+                [
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "4546465f504c41534d41574950455f415649445f43454e5445525f43454e5445525f4f4345414e0"
+                ],
+                [
+                    "386e92f8-978e-11d3-80e1-006008143e6f AvidSelectedKeyFrame",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    true
+                ]
+            ]
+        }
+    }
+}

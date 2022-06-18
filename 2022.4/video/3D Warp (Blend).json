@@ -1,0 +1,248 @@
+{
+    "name": "3D Warp (Blend)",
+    "operations": {
+        "SBlend_v2": {
+            "TypeDefinitions": {
+                "ints": {
+                    "aafInt32": [
+                        "01010700-0000-0000-060e-2b3401040101",
+                        4,
+                        true
+                    ],
+                    "aafUInt16": [
+                        "01010200-0000-0000-060e-2b3401040101",
+                        2,
+                        false
+                    ],
+                    "aafUInt32": [
+                        "01010300-0000-0000-060e-2b3401040101",
+                        4,
+                        false
+                    ]
+                },
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                },
+                "records": {
+                    "Rational": [
+                        "03010100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Numerator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ],
+                            [
+                                "Denominator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ]
+                        ]
+                    ]
+                },
+                "enums": {
+                    "Boolean": [
+                        "01040100-0000-0000-060e-2b3401040101",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        {
+                            "0": "False",
+                            "1": "True"
+                        }
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    "AvidParameterByteOrder",
+                    ""
+                ],
+                "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AvidEffectID",
+                    ""
+                ],
+                "8d56821c-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_DEFOCUS_MODE_U",
+                    ""
+                ],
+                "8d56812b-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "AFX_FIXED_ASPECT_U",
+                    ""
+                ],
+                "8d56828e-847e-11d5-935a-50f857c10000": [
+                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                    "DVE_TRACKING_POS_U",
+                    ""
+                ],
+                "8d5681a1-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_WARP_FREQ_U",
+                    ""
+                ],
+                "8d5681a2-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_WARP_AMPLT_U",
+                    ""
+                ],
+                "8d5681a4-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_WARP_CURVE_U",
+                    ""
+                ],
+                "8d5681d0-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "DVE_BORDER_ENABLED_U",
+                    ""
+                ],
+                "8d5681ed-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_MT_WARP_FOREGROUND_U",
+                    ""
+                ],
+                "8d5681fc-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "DVE_FG_KEY_HIGH_SAT_U",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID"
+                ],
+                "Bypass": 1,
+                "NumberInputs": 2,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Picture",
+                "Identification": "47052d96-effc-431a-b2fe-3b4291c5d8fd",
+                "Description": "",
+                "Name": "SBlend_v2"
+            },
+            "ComponentAttributeList": {
+                "_BORDER_FIXED": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                "_EFFECT_PLUGIN_TYPE": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AVX2"
+                ],
+                "_EFFECT_PLUGIN_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "3DWarp"
+                ],
+                "_EFFECT_PLUGIN_CLASS": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AVX2 Effect"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "3d780682-77e9-11d6-94d9-00306542a024"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Avid"
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1cf8c0c4-8536-45ab-aace-02abfeed5fdd"
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_VERSION": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1.0"
+                ],
+                "_EFFECT_PLUGIN_SKU": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_IGNORE_TRACKING": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ]
+            },
+            "Parameters": [
+                [
+                    "8d56821c-847e-11d5-935a-50f857c10000 DVE_DEFOCUS_MODE_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "0"
+                ],
+                [
+                    "8d56812b-847e-11d5-935a-50f857c10000 AFX_FIXED_ASPECT_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    true
+                ],
+                [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "ConstantValue",
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    18761
+                ],
+                [
+                    "8d56828e-847e-11d5-935a-50f857c10000 DVE_TRACKING_POS_U",
+                    "ConstantValue",
+                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                    0
+                ],
+                [
+                    "8d5681a1-847e-11d5-935a-50f857c10000 DVE_WARP_FREQ_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "59/100"
+                ],
+                [
+                    "8d5681a2-847e-11d5-935a-50f857c10000 DVE_WARP_AMPLT_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "0"
+                ],
+                [
+                    "8d5681a4-847e-11d5-935a-50f857c10000 DVE_WARP_CURVE_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "0"
+                ],
+                [
+                    "8d5681d0-847e-11d5-935a-50f857c10000 DVE_BORDER_ENABLED_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    false
+                ],
+                [
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "454646325f53424c454e440"
+                ],
+                [
+                    "8d5681ed-847e-11d5-935a-50f857c10000 DVE_MT_WARP_FOREGROUND_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "1"
+                ],
+                [
+                    "8d5681fc-847e-11d5-935a-50f857c10000 DVE_FG_KEY_HIGH_SAT_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "255"
+                ]
+            ]
+        }
+    }
+}

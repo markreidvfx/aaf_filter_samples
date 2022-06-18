@@ -1,0 +1,215 @@
+{
+    "name": "EQ Effect (MaterEQEffect)",
+    "operations": {
+        "Audio MultiBand EQ": {
+            "TypeDefinitions": {
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                },
+                "enums": {
+                    "Boolean": [
+                        "01040100-0000-0000-060e-2b3401040101",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        {
+                            "0": "False",
+                            "1": "True"
+                        }
+                    ]
+                },
+                "var_arrays": {
+                    "EqualizationBandArray": [
+                        "c4c670ca-bd44-11d3-80e9-006008143e6f",
+                        "c4c670c9-bd44-11d3-80e9-006008143e6f EqualizationBand"
+                    ]
+                },
+                "records": {
+                    "EqualizationBand": [
+                        "c4c670c9-bd44-11d3-80e9-006008143e6f",
+                        [
+                            [
+                                "type",
+                                "01030100-0000-0000-060e-2b3401040101 AUID"
+                            ],
+                            [
+                                "frequency",
+                                "01010300-0000-0000-060e-2b3401040101 aafUInt32"
+                            ],
+                            [
+                                "gain",
+                                "01010300-0000-0000-060e-2b3401040101 aafUInt32"
+                            ],
+                            [
+                                "q",
+                                "01010300-0000-0000-060e-2b3401040101 aafUInt32"
+                            ],
+                            [
+                                "enable",
+                                "01040100-0000-0000-060e-2b3401040101 Boolean"
+                            ]
+                        ]
+                    ],
+                    "AUID": [
+                        "01030100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Data1",
+                                "01010300-0000-0000-060e-2b3401040101 aafUInt32"
+                            ],
+                            [
+                                "Data2",
+                                "01010200-0000-0000-060e-2b3401040101 aafUInt16"
+                            ],
+                            [
+                                "Data3",
+                                "01010200-0000-0000-060e-2b3401040101 aafUInt16"
+                            ],
+                            [
+                                "Data4",
+                                "04010800-0000-0000-060e-2b3401040101 aafUInt8Array8"
+                            ]
+                        ]
+                    ]
+                },
+                "ints": {
+                    "aafUInt32": [
+                        "01010300-0000-0000-060e-2b3401040101",
+                        4,
+                        false
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "101cfd8f-dfce-11d3-9ff3-0004ac969f50": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AvidEQFilterName",
+                    ""
+                ],
+                "1b8006a3-e3c6-11d3-9ff3-0004ac969f50": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "AvidEQFilterEnabled",
+                    ""
+                ],
+                "f8c03cba-ac1e-11d3-80e4-006008143e6f": [
+                    "c4c670ca-bd44-11d3-80e9-006008143e6f EqualizationBandArray",
+                    "AvidEQBands",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "101cfd8f-dfce-11d3-9ff3-0004ac969f50 AvidEQFilterName",
+                    "1b8006a3-e3c6-11d3-9ff3-0004ac969f50 AvidEQFilterEnabled",
+                    "f8c03cba-ac1e-11d3-80e4-006008143e6f AvidEQBands"
+                ],
+                "Bypass": 0,
+                "NumberInputs": 1,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Sound",
+                "Identification": "f1db0f23-8d64-11d3-80df-006008143e6f",
+                "Description": "",
+                "Name": "Audio MultiBand EQ"
+            },
+            "ComponentAttributeList": {},
+            "Parameters": [
+                [
+                    "101cfd8f-dfce-11d3-9ff3-0004ac969f50 AvidEQFilterName",
+                    "ConstantValue",
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                [
+                    "1b8006a3-e3c6-11d3-9ff3-0004ac969f50 AvidEQFilterEnabled",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    true
+                ],
+                [
+                    "f8c03cba-ac1e-11d3-80e4-006008143e6f AvidEQBands",
+                    "ConstantValue",
+                    "c4c670ca-bd44-11d3-80e9-006008143e6f EqualizationBandArray",
+                    [
+                        [
+                            "c4c670c9-bd44-11d3-80e9-006008143e6f EqualizationBand",
+                            [
+                                [
+                                    "01030100-0000-0000-060e-2b3401040101 AUID",
+                                    "eb5c1b67-c387-11d3-80ec-006008143e6f"
+                                ],
+                                [
+                                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                                    50000
+                                ],
+                                [
+                                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                                    0
+                                ],
+                                [
+                                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                                    1410
+                                ],
+                                [
+                                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                                    true
+                                ]
+                            ]
+                        ],
+                        [
+                            "c4c670c9-bd44-11d3-80e9-006008143e6f EqualizationBand",
+                            [
+                                [
+                                    "01030100-0000-0000-060e-2b3401040101 AUID",
+                                    "eb5c1b66-c387-11d3-80ec-006008143e6f"
+                                ],
+                                [
+                                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                                    500000
+                                ],
+                                [
+                                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                                    0
+                                ],
+                                [
+                                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                                    670
+                                ],
+                                [
+                                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                                    true
+                                ]
+                            ]
+                        ],
+                        [
+                            "c4c670c9-bd44-11d3-80e9-006008143e6f EqualizationBand",
+                            [
+                                [
+                                    "01030100-0000-0000-060e-2b3401040101 AUID",
+                                    "eb5c1b68-c387-11d3-80ec-006008143e6f"
+                                ],
+                                [
+                                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                                    15000000
+                                ],
+                                [
+                                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                                    0
+                                ],
+                                [
+                                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                                    1410
+                                ],
+                                [
+                                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                                    true
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        }
+    }
+}

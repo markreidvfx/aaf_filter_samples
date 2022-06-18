@@ -1,0 +1,1898 @@
+Version = AvidWin:1002000000
+Date = {Thu Jun 16 16:00:14 2022}
+
+Database = {
+}
+
+Database = {
+	Style = {
+		Name = Default
+		UniqueID = b0920da7-5336-42d8-922e-d58447db49d4
+		Properties = {
+			Effect.Profile = {
+				Value = 86acd7f5-f4b4-1020-820a-0800690b8c5c
+			}
+
+			Effect.ProfileScale = {
+				Value = 1
+			}
+
+			Effect.ExtrudeDepth = {
+				Value = 0
+			}
+
+			Effect.Wireframe = {
+				Value = False
+			}
+
+			Global.Background = {
+				Value = {}
+			}
+
+			Light.State = {
+				Value = True
+			}
+
+			Light.Type = {
+				Value = Local
+			}
+
+			Light.Color.Red = {
+				Value = 1
+			}
+
+			Light.Color.Green = {
+				Value = 1
+			}
+
+			Light.Color.Blue = {
+				Value = 1
+			}
+
+			Light.Intensity = {
+				Value = 1
+			}
+
+			Light.Spot.Target.X = {
+				Value = 0
+			}
+
+			Light.Spot.Target.Y = {
+				Value = 0
+			}
+
+			Light.Spot.Target.Z = {
+				Value = 0
+			}
+
+			Light.Spot.Size = {
+				Value = 20
+			}
+
+			Light.Spot.Falloff = {
+				Value = 0.5
+			}
+
+			Material.Opacity = {
+				Value = 1
+			}
+
+			Material.Main.Enable = {
+				Value = True
+			}
+
+			Material.Main.Base.Red = {
+				Value = 1
+			}
+
+			Material.Main.Base.Green = {
+				Value = 1
+			}
+
+			Material.Main.Base.Blue = {
+				Value = 1
+			}
+
+			Material.Main.Opacity = {
+				Value = 1
+			}
+
+			Material.Main.Lighting.Enable = {
+				Value = False
+			}
+
+			Material.Main.Lighting.Emission.Red = {
+				Value = 0
+			}
+
+			Material.Main.Lighting.Emission.Green = {
+				Value = 0
+			}
+
+			Material.Main.Lighting.Emission.Blue = {
+				Value = 0
+			}
+
+			Material.Main.Lighting.Specular.Red = {
+				Value = 0.5
+			}
+
+			Material.Main.Lighting.Specular.Green = {
+				Value = 0.5
+			}
+
+			Material.Main.Lighting.Specular.Blue = {
+				Value = 0.5
+			}
+
+			Material.Main.Lighting.Shininess = {
+				Value = 10
+			}
+
+			Material.Main.Lighting.Texture = {
+				Value = {}
+			}
+
+			Material.Main.Texture.Enable = {
+				Value = False
+			}
+
+			Material.Main.Texture.Image = {
+				Value = 86acd7f4-f4b4-1020-820a-0800690b8c5c
+			}
+
+			Material.Main.Texture.Tile = {
+				Value = False
+			}
+
+			Material.Main.Texture.Tint = {
+				Value = True
+			}
+
+			Material.Main.Texture.Mapping = {
+				Value = Local
+			}
+
+			Material.Main.Texture.Scale.X = {
+				Value = 1
+			}
+
+			Material.Main.Texture.Scale.Y = {
+				Value = 1
+			}
+
+			Material.Main.Texture.Offset.X = {
+				Value = 0
+			}
+
+			Material.Main.Texture.Offset.Y = {
+				Value = 0
+			}
+
+			Material.Main.Texture.Rotation = {
+				Value = 0
+			}
+
+			Material.Main.Mode = {
+				Value = Normal
+			}
+
+			Material.Profile.Enable = {
+				Value = False
+			}
+
+			Material.Profile.Base.Red = {
+				Value = 1
+			}
+
+			Material.Profile.Base.Green = {
+				Value = 1
+			}
+
+			Material.Profile.Base.Blue = {
+				Value = 1
+			}
+
+			Material.Profile.Opacity = {
+				Value = 1
+			}
+
+			Material.Profile.Lighting.Enable = {
+				Value = False
+			}
+
+			Material.Profile.Lighting.Emission.Red = {
+				Value = 0
+			}
+
+			Material.Profile.Lighting.Emission.Green = {
+				Value = 0
+			}
+
+			Material.Profile.Lighting.Emission.Blue = {
+				Value = 0
+			}
+
+			Material.Profile.Lighting.Specular.Red = {
+				Value = 0.5
+			}
+
+			Material.Profile.Lighting.Specular.Green = {
+				Value = 0.5
+			}
+
+			Material.Profile.Lighting.Specular.Blue = {
+				Value = 0.5
+			}
+
+			Material.Profile.Lighting.Shininess = {
+				Value = 10
+			}
+
+			Material.Profile.Lighting.Texture = {
+				Value = {}
+			}
+
+			Material.Profile.Texture.Enable = {
+				Value = False
+			}
+
+			Material.Profile.Texture.Image = {
+				Value = 86acd7f4-f4b4-1020-820a-0800690b8c5c
+			}
+
+			Material.Profile.Texture.Tile = {
+				Value = False
+			}
+
+			Material.Profile.Texture.Tint = {
+				Value = True
+			}
+
+			Material.Profile.Texture.Mapping = {
+				Value = Local
+			}
+
+			Material.Profile.Texture.Scale.X = {
+				Value = 1
+			}
+
+			Material.Profile.Texture.Scale.Y = {
+				Value = 1
+			}
+
+			Material.Profile.Texture.Offset.X = {
+				Value = 0
+			}
+
+			Material.Profile.Texture.Offset.Y = {
+				Value = 0
+			}
+
+			Material.Profile.Texture.Rotation = {
+				Value = 0
+			}
+
+			Material.Profile.Mode = {
+				Value = Normal
+			}
+
+			Material.Extrude.Enable = {
+				Value = False
+			}
+
+			Material.Extrude.Base.Red = {
+				Value = 1
+			}
+
+			Material.Extrude.Base.Green = {
+				Value = 1
+			}
+
+			Material.Extrude.Base.Blue = {
+				Value = 1
+			}
+
+			Material.Extrude.Opacity = {
+				Value = 1
+			}
+
+			Material.Extrude.Lighting.Enable = {
+				Value = False
+			}
+
+			Material.Extrude.Lighting.Emission.Red = {
+				Value = 0
+			}
+
+			Material.Extrude.Lighting.Emission.Green = {
+				Value = 0
+			}
+
+			Material.Extrude.Lighting.Emission.Blue = {
+				Value = 0
+			}
+
+			Material.Extrude.Lighting.Specular.Red = {
+				Value = 0.5
+			}
+
+			Material.Extrude.Lighting.Specular.Green = {
+				Value = 0.5
+			}
+
+			Material.Extrude.Lighting.Specular.Blue = {
+				Value = 0.5
+			}
+
+			Material.Extrude.Lighting.Shininess = {
+				Value = 10
+			}
+
+			Material.Extrude.Lighting.Texture = {
+				Value = {}
+			}
+
+			Material.Extrude.Texture.Enable = {
+				Value = False
+			}
+
+			Material.Extrude.Texture.Image = {
+				Value = 86acd7f4-f4b4-1020-820a-0800690b8c5c
+			}
+
+			Material.Extrude.Texture.Tile = {
+				Value = False
+			}
+
+			Material.Extrude.Texture.Tint = {
+				Value = True
+			}
+
+			Material.Extrude.Texture.Mapping = {
+				Value = Local
+			}
+
+			Material.Extrude.Texture.Scale.X = {
+				Value = 1
+			}
+
+			Material.Extrude.Texture.Scale.Y = {
+				Value = 1
+			}
+
+			Material.Extrude.Texture.Offset.X = {
+				Value = 0
+			}
+
+			Material.Extrude.Texture.Offset.Y = {
+				Value = 0
+			}
+
+			Material.Extrude.Texture.Rotation = {
+				Value = 0
+			}
+
+			Material.Extrude.Mode = {
+				Value = Normal
+			}
+
+			Material.Background.Enable = {
+				Value = False
+			}
+
+			Material.Background.Base.Red = {
+				Value = 1
+			}
+
+			Material.Background.Base.Green = {
+				Value = 1
+			}
+
+			Material.Background.Base.Blue = {
+				Value = 1
+			}
+
+			Material.Background.Opacity = {
+				Value = 1
+			}
+
+			Material.Background.Lighting.Enable = {
+				Value = False
+			}
+
+			Material.Background.Lighting.Emission.Red = {
+				Value = 0
+			}
+
+			Material.Background.Lighting.Emission.Green = {
+				Value = 0
+			}
+
+			Material.Background.Lighting.Emission.Blue = {
+				Value = 0
+			}
+
+			Material.Background.Lighting.Specular.Red = {
+				Value = 0.5
+			}
+
+			Material.Background.Lighting.Specular.Green = {
+				Value = 0.5
+			}
+
+			Material.Background.Lighting.Specular.Blue = {
+				Value = 0.5
+			}
+
+			Material.Background.Lighting.Shininess = {
+				Value = 10
+			}
+
+			Material.Background.Lighting.Texture = {
+				Value = {}
+			}
+
+			Material.Background.Texture.Enable = {
+				Value = False
+			}
+
+			Material.Background.Texture.Image = {
+				Value = 86acd7f4-f4b4-1020-820a-0800690b8c5c
+			}
+
+			Material.Background.Texture.Tile = {
+				Value = False
+			}
+
+			Material.Background.Texture.Tint = {
+				Value = True
+			}
+
+			Material.Background.Texture.Mapping = {
+				Value = Local
+			}
+
+			Material.Background.Texture.Scale.X = {
+				Value = 1
+			}
+
+			Material.Background.Texture.Scale.Y = {
+				Value = 1
+			}
+
+			Material.Background.Texture.Offset.X = {
+				Value = 0
+			}
+
+			Material.Background.Texture.Offset.Y = {
+				Value = 0
+			}
+
+			Material.Background.Texture.Rotation = {
+				Value = 0
+			}
+
+			Material.Background.Mode = {
+				Value = Normal
+			}
+
+			Manager.Width = {
+				Value = 1
+			}
+
+			Manager.Height = {
+				Value = 1
+			}
+
+			Manager.Depth = {
+				Value = 0
+			}
+
+			Path.BaselineOffset = {
+				Value = 0
+			}
+
+			Path.Orientation = {
+				Value = Follow
+			}
+
+			Render.Visibility = {
+				Value = True
+			}
+
+			Render.GenMatte = {
+				Value = True
+			}
+
+			Render.BackfaceCull = {
+				Value = False
+			}
+
+			Shadow.Enable = {
+				Value = False
+			}
+
+			Shadow.Type = {
+				Value = Drop
+			}
+
+			Shadow.LightSource = {
+				Value = Light_1
+			}
+
+			Shadow.Offset.X = {
+				Value = 0.01
+			}
+
+			Shadow.Offset.Y = {
+				Value = -0.01
+			}
+
+			Shadow.Opacity = {
+				Value = 0.5
+			}
+
+			Shadow.Softness = {
+				Value = 0
+			}
+
+			Shadow.Color.Red = {
+				Value = 0
+			}
+
+			Shadow.Color.Green = {
+				Value = 0
+			}
+
+			Shadow.Color.Blue = {
+				Value = 0
+			}
+
+			Shadow.Hinge.Side = {
+				Value = Bottom
+			}
+
+			Shadow.Hinge.Angle = {
+				Value = 45
+			}
+
+			Shadow.Hinge.Offset = {
+				Value = 0
+			}
+
+			Shadow.Hinge.Skew = {
+				Value = 0
+			}
+
+			Shadow.Texture = {
+				Value = {}
+			}
+
+			Shadow.UseMainAlpha = {
+				Value = False
+			}
+
+			Text.Font.Name = {
+				Value = {Times New Roman}
+			}
+
+			Text.Font.Size = {
+				Value = 0.1
+			}
+
+			Text.Kerning = {
+				Value = 0
+			}
+
+			Text.Scroll = {
+				Value = 0
+				Time = 1
+				Value = 1
+			}
+
+			Text.Margin.Top = {
+				Value = 0
+			}
+
+			Text.Margin.Bottom = {
+				Value = 0
+			}
+
+			Transform.Position.X = {
+				Value = 0
+			}
+
+			Transform.Position.Y = {
+				Value = 0
+			}
+
+			Transform.Position.Z = {
+				Value = 0
+			}
+
+			Transform.Scale.X = {
+				Value = 1
+			}
+
+			Transform.Scale.Y = {
+				Value = 1
+			}
+
+			Transform.Scale.Z = {
+				Value = 1
+			}
+
+			Transform.Rotate.X = {
+				Value = 0
+			}
+
+			Transform.Rotate.Y = {
+				Value = 0
+			}
+
+			Transform.Rotate.Z = {
+				Value = 0
+			}
+
+			Transform.Center.X = {
+				Value = 0
+			}
+
+			Transform.Center.Y = {
+				Value = 0
+			}
+
+			Transform.Center.Z = {
+				Value = 0
+			}
+
+			DVE.Effect = {
+				Value = 2f60ef18-b21e-1022-87af-0800690b8c5c
+			}
+
+			DVE.Displacement.Image = {
+				Value = {}
+			}
+
+			DVE.Displacement.Scale = {
+				Value = 0.05
+			}
+
+			DVE.Displacement.Offset = {
+				Value = 0.5
+			}
+
+			DVE.Displacement.Softness = {
+				Value = 10
+			}
+
+			DVE.Tesselation.X = {
+				Value = 1
+			}
+
+			DVE.Tesselation.Y = {
+				Value = 1
+			}
+
+			DVE.Border.Size = {
+				Value = 0
+			}
+
+			DVE.Border.Softness = {
+				Value = 0
+			}
+
+			DVE.Border.Color.Red = {
+				Value = 0
+			}
+
+			DVE.Border.Color.Green = {
+				Value = 0
+			}
+
+			DVE.Border.Color.Blue = {
+				Value = 0
+			}
+
+			DVE.PageCurl.Radius = {
+				Value = 0.1
+			}
+
+			DVE.PageCurl.Angle = {
+				Value = 0
+			}
+
+			DVE.PageCurl.CurlTime = {
+				Value = 0
+				Time = 1
+				Value = 1
+			}
+
+			DVE.Ripple.Amplitude = {
+				Value = 0.1
+			}
+
+			DVE.Ripple.Angle = {
+				Value = 0
+			}
+
+			DVE.Ripple.RippleTime = {
+				Value = 0
+			}
+
+			DVE.Ripple.Frequency = {
+				Value = 1
+			}
+
+			DVE.Sphere.Angle = {
+				Value = 360
+			}
+
+			DVE.Sphere.Distortion = {
+				Value = 1
+			}
+
+		}
+
+	}
+
+}
+
+PropCache = {
+	Effect.Profile = {
+		Value = 86acd7f5-f4b4-1020-820a-0800690b8c5c
+	}
+
+	Effect.ProfileScale = {
+		Value = 1
+	}
+
+	Effect.ExtrudeDepth = {
+		Value = 0
+	}
+
+	Effect.Wireframe = {
+		Value = False
+	}
+
+	Global.Background = {
+		Value = {}
+	}
+
+	Light.State = {
+		Value = True
+	}
+
+	Light.Type = {
+		Value = Local
+	}
+
+	Light.Color.Red = {
+		Value = 1
+	}
+
+	Light.Color.Green = {
+		Value = 1
+	}
+
+	Light.Color.Blue = {
+		Value = 1
+	}
+
+	Light.Intensity = {
+		Value = 1
+	}
+
+	Light.Spot.Target.X = {
+		Value = 0
+	}
+
+	Light.Spot.Target.Y = {
+		Value = 0
+	}
+
+	Light.Spot.Target.Z = {
+		Value = 0
+	}
+
+	Light.Spot.Size = {
+		Value = 20
+	}
+
+	Light.Spot.Falloff = {
+		Value = 0.5
+	}
+
+	Material.Opacity = {
+		Value = 1
+	}
+
+	Material.Main.Enable = {
+		Value = True
+	}
+
+	Material.Main.Base.Red = {
+		Value = 1
+	}
+
+	Material.Main.Base.Green = {
+		Value = 1
+	}
+
+	Material.Main.Base.Blue = {
+		Value = 1
+	}
+
+	Material.Main.Opacity = {
+		Value = 1
+	}
+
+	Material.Main.Lighting.Enable = {
+		Value = False
+	}
+
+	Material.Main.Lighting.Emission.Red = {
+		Value = 0
+	}
+
+	Material.Main.Lighting.Emission.Green = {
+		Value = 0
+	}
+
+	Material.Main.Lighting.Emission.Blue = {
+		Value = 0
+	}
+
+	Material.Main.Lighting.Specular.Red = {
+		Value = 0.5
+	}
+
+	Material.Main.Lighting.Specular.Green = {
+		Value = 0.5
+	}
+
+	Material.Main.Lighting.Specular.Blue = {
+		Value = 0.5
+	}
+
+	Material.Main.Lighting.Shininess = {
+		Value = 10
+	}
+
+	Material.Main.Lighting.Texture = {
+		Value = {}
+	}
+
+	Material.Main.Texture.Enable = {
+		Value = False
+	}
+
+	Material.Main.Texture.Image = {
+		Value = 86acd7f4-f4b4-1020-820a-0800690b8c5c
+	}
+
+	Material.Main.Texture.Tile = {
+		Value = False
+	}
+
+	Material.Main.Texture.Tint = {
+		Value = True
+	}
+
+	Material.Main.Texture.Mapping = {
+		Value = Local
+	}
+
+	Material.Main.Texture.Scale.X = {
+		Value = 1
+	}
+
+	Material.Main.Texture.Scale.Y = {
+		Value = 1
+	}
+
+	Material.Main.Texture.Offset.X = {
+		Value = 0
+	}
+
+	Material.Main.Texture.Offset.Y = {
+		Value = 0
+	}
+
+	Material.Main.Texture.Rotation = {
+		Value = 0
+	}
+
+	Material.Main.Mode = {
+		Value = Normal
+	}
+
+	Material.Profile.Enable = {
+		Value = False
+	}
+
+	Material.Profile.Base.Red = {
+		Value = 1
+	}
+
+	Material.Profile.Base.Green = {
+		Value = 1
+	}
+
+	Material.Profile.Base.Blue = {
+		Value = 1
+	}
+
+	Material.Profile.Opacity = {
+		Value = 1
+	}
+
+	Material.Profile.Lighting.Enable = {
+		Value = False
+	}
+
+	Material.Profile.Lighting.Emission.Red = {
+		Value = 0
+	}
+
+	Material.Profile.Lighting.Emission.Green = {
+		Value = 0
+	}
+
+	Material.Profile.Lighting.Emission.Blue = {
+		Value = 0
+	}
+
+	Material.Profile.Lighting.Specular.Red = {
+		Value = 0.5
+	}
+
+	Material.Profile.Lighting.Specular.Green = {
+		Value = 0.5
+	}
+
+	Material.Profile.Lighting.Specular.Blue = {
+		Value = 0.5
+	}
+
+	Material.Profile.Lighting.Shininess = {
+		Value = 10
+	}
+
+	Material.Profile.Lighting.Texture = {
+		Value = {}
+	}
+
+	Material.Profile.Texture.Enable = {
+		Value = False
+	}
+
+	Material.Profile.Texture.Image = {
+		Value = 86acd7f4-f4b4-1020-820a-0800690b8c5c
+	}
+
+	Material.Profile.Texture.Tile = {
+		Value = False
+	}
+
+	Material.Profile.Texture.Tint = {
+		Value = True
+	}
+
+	Material.Profile.Texture.Mapping = {
+		Value = Local
+	}
+
+	Material.Profile.Texture.Scale.X = {
+		Value = 1
+	}
+
+	Material.Profile.Texture.Scale.Y = {
+		Value = 1
+	}
+
+	Material.Profile.Texture.Offset.X = {
+		Value = 0
+	}
+
+	Material.Profile.Texture.Offset.Y = {
+		Value = 0
+	}
+
+	Material.Profile.Texture.Rotation = {
+		Value = 0
+	}
+
+	Material.Profile.Mode = {
+		Value = Normal
+	}
+
+	Material.Extrude.Enable = {
+		Value = False
+	}
+
+	Material.Extrude.Base.Red = {
+		Value = 1
+	}
+
+	Material.Extrude.Base.Green = {
+		Value = 1
+	}
+
+	Material.Extrude.Base.Blue = {
+		Value = 1
+	}
+
+	Material.Extrude.Opacity = {
+		Value = 1
+	}
+
+	Material.Extrude.Lighting.Enable = {
+		Value = False
+	}
+
+	Material.Extrude.Lighting.Emission.Red = {
+		Value = 0
+	}
+
+	Material.Extrude.Lighting.Emission.Green = {
+		Value = 0
+	}
+
+	Material.Extrude.Lighting.Emission.Blue = {
+		Value = 0
+	}
+
+	Material.Extrude.Lighting.Specular.Red = {
+		Value = 0.5
+	}
+
+	Material.Extrude.Lighting.Specular.Green = {
+		Value = 0.5
+	}
+
+	Material.Extrude.Lighting.Specular.Blue = {
+		Value = 0.5
+	}
+
+	Material.Extrude.Lighting.Shininess = {
+		Value = 10
+	}
+
+	Material.Extrude.Lighting.Texture = {
+		Value = {}
+	}
+
+	Material.Extrude.Texture.Enable = {
+		Value = False
+	}
+
+	Material.Extrude.Texture.Image = {
+		Value = 86acd7f4-f4b4-1020-820a-0800690b8c5c
+	}
+
+	Material.Extrude.Texture.Tile = {
+		Value = False
+	}
+
+	Material.Extrude.Texture.Tint = {
+		Value = True
+	}
+
+	Material.Extrude.Texture.Mapping = {
+		Value = Local
+	}
+
+	Material.Extrude.Texture.Scale.X = {
+		Value = 1
+	}
+
+	Material.Extrude.Texture.Scale.Y = {
+		Value = 1
+	}
+
+	Material.Extrude.Texture.Offset.X = {
+		Value = 0
+	}
+
+	Material.Extrude.Texture.Offset.Y = {
+		Value = 0
+	}
+
+	Material.Extrude.Texture.Rotation = {
+		Value = 0
+	}
+
+	Material.Extrude.Mode = {
+		Value = Normal
+	}
+
+	Material.Background.Enable = {
+		Value = False
+	}
+
+	Material.Background.Base.Red = {
+		Value = 1
+	}
+
+	Material.Background.Base.Green = {
+		Value = 1
+	}
+
+	Material.Background.Base.Blue = {
+		Value = 1
+	}
+
+	Material.Background.Opacity = {
+		Value = 1
+	}
+
+	Material.Background.Lighting.Enable = {
+		Value = False
+	}
+
+	Material.Background.Lighting.Emission.Red = {
+		Value = 0
+	}
+
+	Material.Background.Lighting.Emission.Green = {
+		Value = 0
+	}
+
+	Material.Background.Lighting.Emission.Blue = {
+		Value = 0
+	}
+
+	Material.Background.Lighting.Specular.Red = {
+		Value = 0.5
+	}
+
+	Material.Background.Lighting.Specular.Green = {
+		Value = 0.5
+	}
+
+	Material.Background.Lighting.Specular.Blue = {
+		Value = 0.5
+	}
+
+	Material.Background.Lighting.Shininess = {
+		Value = 10
+	}
+
+	Material.Background.Lighting.Texture = {
+		Value = {}
+	}
+
+	Material.Background.Texture.Enable = {
+		Value = False
+	}
+
+	Material.Background.Texture.Image = {
+		Value = 86acd7f4-f4b4-1020-820a-0800690b8c5c
+	}
+
+	Material.Background.Texture.Tile = {
+		Value = False
+	}
+
+	Material.Background.Texture.Tint = {
+		Value = True
+	}
+
+	Material.Background.Texture.Mapping = {
+		Value = Local
+	}
+
+	Material.Background.Texture.Scale.X = {
+		Value = 1
+	}
+
+	Material.Background.Texture.Scale.Y = {
+		Value = 1
+	}
+
+	Material.Background.Texture.Offset.X = {
+		Value = 0
+	}
+
+	Material.Background.Texture.Offset.Y = {
+		Value = 0
+	}
+
+	Material.Background.Texture.Rotation = {
+		Value = 0
+	}
+
+	Material.Background.Mode = {
+		Value = Normal
+	}
+
+	Manager.Width = {
+		Value = 1
+	}
+
+	Manager.Height = {
+		Value = 1
+	}
+
+	Manager.Depth = {
+		Value = 0
+	}
+
+	Path.BaselineOffset = {
+		Value = 0
+	}
+
+	Path.Orientation = {
+		Value = Follow
+	}
+
+	Render.Visibility = {
+		Value = True
+	}
+
+	Render.GenMatte = {
+		Value = True
+	}
+
+	Render.BackfaceCull = {
+		Value = False
+	}
+
+	Shadow.Enable = {
+		Value = False
+	}
+
+	Shadow.Type = {
+		Value = Drop
+	}
+
+	Shadow.LightSource = {
+		Value = Light_1
+	}
+
+	Shadow.Offset.X = {
+		Value = 0.01
+	}
+
+	Shadow.Offset.Y = {
+		Value = -0.01
+	}
+
+	Shadow.Opacity = {
+		Value = 0.5
+	}
+
+	Shadow.Softness = {
+		Value = 0
+	}
+
+	Shadow.Color.Red = {
+		Value = 0
+	}
+
+	Shadow.Color.Green = {
+		Value = 0
+	}
+
+	Shadow.Color.Blue = {
+		Value = 0
+	}
+
+	Shadow.Hinge.Side = {
+		Value = Bottom
+	}
+
+	Shadow.Hinge.Angle = {
+		Value = 45
+	}
+
+	Shadow.Hinge.Offset = {
+		Value = 0
+	}
+
+	Shadow.Hinge.Skew = {
+		Value = 0
+	}
+
+	Shadow.Texture = {
+		Value = {}
+	}
+
+	Shadow.UseMainAlpha = {
+		Value = False
+	}
+
+	Text.Font.Name = {
+		Value = {Times New Roman}
+	}
+
+	Text.Font.Size = {
+		Value = 0.1
+	}
+
+	Text.Kerning = {
+		Value = 0
+	}
+
+	Text.Scroll = {
+		Value = 0
+		Time = 1
+		Value = 1
+	}
+
+	Text.Margin.Top = {
+		Value = 0
+	}
+
+	Text.Margin.Bottom = {
+		Value = 0
+	}
+
+	Transform.Position.X = {
+		Value = 0
+	}
+
+	Transform.Position.Y = {
+		Value = 0
+	}
+
+	Transform.Position.Z = {
+		Value = 0
+	}
+
+	Transform.Scale.X = {
+		Value = 1
+	}
+
+	Transform.Scale.Y = {
+		Value = 1
+	}
+
+	Transform.Scale.Z = {
+		Value = 1
+	}
+
+	Transform.Rotate.X = {
+		Value = 0
+	}
+
+	Transform.Rotate.Y = {
+		Value = 0
+	}
+
+	Transform.Rotate.Z = {
+		Value = 0
+	}
+
+	Transform.Center.X = {
+		Value = 0
+	}
+
+	Transform.Center.Y = {
+		Value = 0
+	}
+
+	Transform.Center.Z = {
+		Value = 0
+	}
+
+	DVE.Effect = {
+		Value = 2f60ef18-b21e-1022-87af-0800690b8c5c
+	}
+
+	DVE.Displacement.Image = {
+		Value = {}
+	}
+
+	DVE.Displacement.Scale = {
+		Value = 0.05
+	}
+
+	DVE.Displacement.Offset = {
+		Value = 0.5
+	}
+
+	DVE.Displacement.Softness = {
+		Value = 10
+	}
+
+	DVE.Tesselation.X = {
+		Value = 1
+	}
+
+	DVE.Tesselation.Y = {
+		Value = 1
+	}
+
+	DVE.Border.Size = {
+		Value = 0
+	}
+
+	DVE.Border.Softness = {
+		Value = 0
+	}
+
+	DVE.Border.Color.Red = {
+		Value = 0
+	}
+
+	DVE.Border.Color.Green = {
+		Value = 0
+	}
+
+	DVE.Border.Color.Blue = {
+		Value = 0
+	}
+
+	DVE.PageCurl.Radius = {
+		Value = 0.1
+	}
+
+	DVE.PageCurl.Angle = {
+		Value = 0
+	}
+
+	DVE.PageCurl.CurlTime = {
+		Value = 0
+		Time = 1
+		Value = 1
+	}
+
+	DVE.Ripple.Amplitude = {
+		Value = 0.1
+	}
+
+	DVE.Ripple.Angle = {
+		Value = 0
+	}
+
+	DVE.Ripple.RippleTime = {
+		Value = 0
+	}
+
+	DVE.Ripple.Frequency = {
+		Value = 1
+	}
+
+	DVE.Sphere.Angle = {
+		Value = 360
+	}
+
+	DVE.Sphere.Distortion = {
+		Value = 1
+	}
+
+	Global.Background = {
+		Value = 6e092f3a-e64c-11d3-a465-006094eb6d6a
+	}
+
+	Manager.Height = {
+		Value = 0.124167
+	}
+
+	Manager.Width = {
+		Value = 0.576667
+	}
+
+	Transform.Position.X = {
+		Value = -0.0533336
+	}
+
+	Transform.Position.Y = {
+		Value = 0.325298
+	}
+
+	Transform.Position.X = {
+		Value = -0.35
+	}
+
+	Transform.Position.Y = {
+		Value = 0.25
+	}
+
+	Transform.Position.Z = {
+		Value = 0.5
+	}
+
+	Transform.Position.X = {
+		Value = 0.638095
+	}
+
+	Transform.Position.Y = {
+		Value = 0.0988095
+	}
+
+	Transform.Position.X = {
+		Value = -0.0687502
+	}
+
+	Transform.Position.Y = {
+		Value = -0.0276786
+	}
+
+	Transform.Position.X = {
+		Value = -0.564286
+	}
+
+	Transform.Position.Y = {
+		Value = -0.0175595
+	}
+
+	List = {
+		Prop = 1:Effect.Profile
+		Prop = 2:Effect.ProfileScale
+		Prop = 3:Effect.ExtrudeDepth
+		Prop = 4:Effect.Wireframe
+		Prop = 5:Global.Background
+		Prop = 6:Light.State
+		Prop = 7:Light.Type
+		Prop = 8:Light.Color.Red
+		Prop = 9:Light.Color.Green
+		Prop = 10:Light.Color.Blue
+		Prop = 11:Light.Intensity
+		Prop = 12:Light.Spot.Target.X
+		Prop = 13:Light.Spot.Target.Y
+		Prop = 14:Light.Spot.Target.Z
+		Prop = 15:Light.Spot.Size
+		Prop = 16:Light.Spot.Falloff
+		Prop = 17:Material.Opacity
+		Prop = 18:Material.Main.Enable
+		Prop = 19:Material.Main.Base.Red
+		Prop = 20:Material.Main.Base.Green
+		Prop = 21:Material.Main.Base.Blue
+		Prop = 22:Material.Main.Opacity
+		Prop = 23:Material.Main.Lighting.Enable
+		Prop = 24:Material.Main.Lighting.Emission.Red
+		Prop = 25:Material.Main.Lighting.Emission.Green
+		Prop = 26:Material.Main.Lighting.Emission.Blue
+		Prop = 27:Material.Main.Lighting.Specular.Red
+		Prop = 28:Material.Main.Lighting.Specular.Green
+		Prop = 29:Material.Main.Lighting.Specular.Blue
+		Prop = 30:Material.Main.Lighting.Shininess
+		Prop = 31:Material.Main.Lighting.Texture
+		Prop = 32:Material.Main.Texture.Enable
+		Prop = 33:Material.Main.Texture.Image
+		Prop = 34:Material.Main.Texture.Tile
+		Prop = 35:Material.Main.Texture.Tint
+		Prop = 36:Material.Main.Texture.Mapping
+		Prop = 37:Material.Main.Texture.Scale.X
+		Prop = 38:Material.Main.Texture.Scale.Y
+		Prop = 39:Material.Main.Texture.Offset.X
+		Prop = 40:Material.Main.Texture.Offset.Y
+		Prop = 41:Material.Main.Texture.Rotation
+		Prop = 42:Material.Main.Mode
+		Prop = 43:Material.Profile.Enable
+		Prop = 44:Material.Profile.Base.Red
+		Prop = 45:Material.Profile.Base.Green
+		Prop = 46:Material.Profile.Base.Blue
+		Prop = 47:Material.Profile.Opacity
+		Prop = 48:Material.Profile.Lighting.Enable
+		Prop = 49:Material.Profile.Lighting.Emission.Red
+		Prop = 50:Material.Profile.Lighting.Emission.Green
+		Prop = 51:Material.Profile.Lighting.Emission.Blue
+		Prop = 52:Material.Profile.Lighting.Specular.Red
+		Prop = 53:Material.Profile.Lighting.Specular.Green
+		Prop = 54:Material.Profile.Lighting.Specular.Blue
+		Prop = 55:Material.Profile.Lighting.Shininess
+		Prop = 56:Material.Profile.Lighting.Texture
+		Prop = 57:Material.Profile.Texture.Enable
+		Prop = 58:Material.Profile.Texture.Image
+		Prop = 59:Material.Profile.Texture.Tile
+		Prop = 60:Material.Profile.Texture.Tint
+		Prop = 61:Material.Profile.Texture.Mapping
+		Prop = 62:Material.Profile.Texture.Scale.X
+		Prop = 63:Material.Profile.Texture.Scale.Y
+		Prop = 64:Material.Profile.Texture.Offset.X
+		Prop = 65:Material.Profile.Texture.Offset.Y
+		Prop = 66:Material.Profile.Texture.Rotation
+		Prop = 67:Material.Profile.Mode
+		Prop = 68:Material.Extrude.Enable
+		Prop = 69:Material.Extrude.Base.Red
+		Prop = 70:Material.Extrude.Base.Green
+		Prop = 71:Material.Extrude.Base.Blue
+		Prop = 72:Material.Extrude.Opacity
+		Prop = 73:Material.Extrude.Lighting.Enable
+		Prop = 74:Material.Extrude.Lighting.Emission.Red
+		Prop = 75:Material.Extrude.Lighting.Emission.Green
+		Prop = 76:Material.Extrude.Lighting.Emission.Blue
+		Prop = 77:Material.Extrude.Lighting.Specular.Red
+		Prop = 78:Material.Extrude.Lighting.Specular.Green
+		Prop = 79:Material.Extrude.Lighting.Specular.Blue
+		Prop = 80:Material.Extrude.Lighting.Shininess
+		Prop = 81:Material.Extrude.Lighting.Texture
+		Prop = 82:Material.Extrude.Texture.Enable
+		Prop = 83:Material.Extrude.Texture.Image
+		Prop = 84:Material.Extrude.Texture.Tile
+		Prop = 85:Material.Extrude.Texture.Tint
+		Prop = 86:Material.Extrude.Texture.Mapping
+		Prop = 87:Material.Extrude.Texture.Scale.X
+		Prop = 88:Material.Extrude.Texture.Scale.Y
+		Prop = 89:Material.Extrude.Texture.Offset.X
+		Prop = 90:Material.Extrude.Texture.Offset.Y
+		Prop = 91:Material.Extrude.Texture.Rotation
+		Prop = 92:Material.Extrude.Mode
+		Prop = 93:Material.Background.Enable
+		Prop = 94:Material.Background.Base.Red
+		Prop = 95:Material.Background.Base.Green
+		Prop = 96:Material.Background.Base.Blue
+		Prop = 97:Material.Background.Opacity
+		Prop = 98:Material.Background.Lighting.Enable
+		Prop = 99:Material.Background.Lighting.Emission.Red
+		Prop = 100:Material.Background.Lighting.Emission.Green
+		Prop = 101:Material.Background.Lighting.Emission.Blue
+		Prop = 102:Material.Background.Lighting.Specular.Red
+		Prop = 103:Material.Background.Lighting.Specular.Green
+		Prop = 104:Material.Background.Lighting.Specular.Blue
+		Prop = 105:Material.Background.Lighting.Shininess
+		Prop = 106:Material.Background.Lighting.Texture
+		Prop = 107:Material.Background.Texture.Enable
+		Prop = 108:Material.Background.Texture.Image
+		Prop = 109:Material.Background.Texture.Tile
+		Prop = 110:Material.Background.Texture.Tint
+		Prop = 111:Material.Background.Texture.Mapping
+		Prop = 112:Material.Background.Texture.Scale.X
+		Prop = 113:Material.Background.Texture.Scale.Y
+		Prop = 114:Material.Background.Texture.Offset.X
+		Prop = 115:Material.Background.Texture.Offset.Y
+		Prop = 116:Material.Background.Texture.Rotation
+		Prop = 117:Material.Background.Mode
+		Prop = 118:Manager.Width
+		Prop = 119:Manager.Height
+		Prop = 120:Manager.Depth
+		Prop = 121:Path.BaselineOffset
+		Prop = 122:Path.Orientation
+		Prop = 123:Render.Visibility
+		Prop = 124:Render.GenMatte
+		Prop = 125:Render.BackfaceCull
+		Prop = 126:Shadow.Enable
+		Prop = 127:Shadow.Type
+		Prop = 128:Shadow.LightSource
+		Prop = 129:Shadow.Offset.X
+		Prop = 130:Shadow.Offset.Y
+		Prop = 131:Shadow.Opacity
+		Prop = 132:Shadow.Softness
+		Prop = 133:Shadow.Color.Red
+		Prop = 134:Shadow.Color.Green
+		Prop = 135:Shadow.Color.Blue
+		Prop = 136:Shadow.Hinge.Side
+		Prop = 137:Shadow.Hinge.Angle
+		Prop = 138:Shadow.Hinge.Offset
+		Prop = 139:Shadow.Hinge.Skew
+		Prop = 140:Shadow.Texture
+		Prop = 141:Shadow.UseMainAlpha
+		Prop = 142:Text.Font.Name
+		Prop = 143:Text.Font.Size
+		Prop = 144:Text.Kerning
+		Prop = 145:Text.Scroll
+		Prop = 146:Text.Margin.Top
+		Prop = 147:Text.Margin.Bottom
+		Prop = 148:Transform.Position.X
+		Prop = 149:Transform.Position.Y
+		Prop = 150:Transform.Position.Z
+		Prop = 151:Transform.Scale.X
+		Prop = 152:Transform.Scale.Y
+		Prop = 153:Transform.Scale.Z
+		Prop = 154:Transform.Rotate.X
+		Prop = 155:Transform.Rotate.Y
+		Prop = 156:Transform.Rotate.Z
+		Prop = 157:Transform.Center.X
+		Prop = 158:Transform.Center.Y
+		Prop = 159:Transform.Center.Z
+		Prop = 160:DVE.Effect
+		Prop = 161:DVE.Displacement.Image
+		Prop = 162:DVE.Displacement.Scale
+		Prop = 163:DVE.Displacement.Offset
+		Prop = 164:DVE.Displacement.Softness
+		Prop = 165:DVE.Tesselation.X
+		Prop = 166:DVE.Tesselation.Y
+		Prop = 167:DVE.Border.Size
+		Prop = 168:DVE.Border.Softness
+		Prop = 169:DVE.Border.Color.Red
+		Prop = 170:DVE.Border.Color.Green
+		Prop = 171:DVE.Border.Color.Blue
+		Prop = 172:DVE.PageCurl.Radius
+		Prop = 173:DVE.PageCurl.Angle
+		Prop = 174:DVE.PageCurl.CurlTime
+		Prop = 175:DVE.Ripple.Amplitude
+		Prop = 176:DVE.Ripple.Angle
+		Prop = 177:DVE.Ripple.RippleTime
+		Prop = 178:DVE.Ripple.Frequency
+		Prop = 179:DVE.Sphere.Angle
+		Prop = 180:DVE.Sphere.Distortion
+	}
+
+	List = {
+		Prop = 181:Global.Background
+	}
+
+	List = {
+		Prop = 183:Manager.Width
+		Prop = 182:Manager.Height
+		Prop = 184:Transform.Position.X
+		Prop = 185:Transform.Position.Y
+	}
+
+	List = {
+		Prop = 186:Transform.Position.X
+		Prop = 187:Transform.Position.Y
+		Prop = 188:Transform.Position.Z
+	}
+
+	List = {
+		Prop = 189:Transform.Position.X
+		Prop = 190:Transform.Position.Y
+	}
+
+	List = {
+		Prop = 191:Transform.Position.X
+		Prop = 192:Transform.Position.Y
+		Prop = 150:Transform.Position.Z
+	}
+
+	List = {
+		Prop = 193:Transform.Position.X
+		Prop = 194:Transform.Position.Y
+		Prop = 150:Transform.Position.Z
+	}
+
+}
+
+OutputInfo = {
+	Resolution = {
+		Name = {HD (1920x1080@23.976p)}
+		Size = (1920,1080)
+		Aspect = (16,9)
+		FrameRate = 23.976
+		Interlaced = False
+		DropFrame = False
+	}
+
+	Length = 5
+	MarkRange = (0,1)
+	Projection = Perspective
+	VerticalFOV = 15
+}
+
+RenderInfo = {
+	Quality = {
+		Quality = High
+	}
+
+	ChannelSize = 1
+	NumChannels = 4
+	RenderMethod = Fastest
+	OutputName = {
+		FrameStart = 1
+		FrameStep = 1
+		NumberPad = 4
+		Format = {[dir]\\[base].[ext]}
+		Directory = {C:\\Users\\mark\\AppData\\Local\\Temp}
+		Extension = pct
+	}
+
+	FileFormat = TIFF
+	Parameters = {ColorDepth=Automatic\nCompression=None\nQuality=100}
+	SaveResult = True
+	SaveMatte = True
+	SaveMatteMode = AlphaChannel
+	VideoSafe = False
+	Premultiply = False
+	JitterSuppression = False
+	MotionBlur = False
+	Exposure = 0.25
+	RenderBackground = True
+	RenderBackgroundAlpha = True
+	ImageBlur = True
+}
+
+ViewQuality = {
+	Quality = Medium
+}
+
+CacheInfo = {
+	CacheOnPark = True
+	CacheOnScrub = False
+	CacheOnPlay = False
+	CacheOnRender = True
+}
+
+TimeDisplay = {
+	Format = Timecode
+}
+
+UnitDisplay = {
+	Format = Points
+}
+
+Grid = {
+	BaseX = 0
+	BaseY = 0
+	StepX = 0.1
+	StepY = 0.1
+}
+
+Scene = {
+	PropList = 2
+	Lights = {
+		Light = {
+			PropList = 4
+			Number = 0
+		}
+
+	}
+
+	Layer = {
+		Name = {Layer 1}
+		Type = 2D
+		Flow = {
+			Name = {Text Box}
+			PropList = 3
+			Mode = Static
+			ClipChildren = False
+			Paragraph = {
+				Info = {
+					Leading = 1
+					SpaceAfter = 0.5
+				}
+
+			}
+
+			Text = {Marquee Test\n}
+		}
+
+		Shape = {
+			PropList = 7
+			CurveList = {
+				FillRule = EvenOdd
+				Hint = Rectangle
+				PointList = {
+					Stroked = False
+					Closed = True
+					Point = {(-0.155952, 0.15744), (-0.155952, 0.15744), (-0.155952, 0.15744)}
+					Point = {(-0.155952, -0.15744), (-0.155952, -0.15744), (-0.155952, -0.15744)}
+					Point = {(0.155952, -0.15744), (0.155952, -0.15744), (0.155952, -0.15744)}
+					Point = {(0.155952, 0.15744), (0.155952, 0.15744), (0.155952, 0.15744)}
+				}
+
+			}
+
+		}
+
+		Shape = {
+			PropList = 6
+			CurveList = {
+				FillRule = EvenOdd
+				PointList = {
+					Stroked = False
+					Closed = True
+					Point = {(0.0944985, 0.151488), (0, 0.151488), (-0.0944985, 0.151488)}
+					Point = {(-0.171131, 0.0836517), (-0.171131, 0), (-0.171131, -0.0836517)}
+					Point = {(-0.0944985, -0.151488), (0, -0.151488), (0.0944985, -0.151488)}
+					Point = {(0.171131, -0.0836517), (0.171131, 0), (0.171131, 0.0836517)}
+				}
+
+			}
+
+		}
+
+		Shape = {
+			PropList = 5
+			CurveList = {
+				FillRule = EvenOdd
+				PointList = {
+					Stroked = True
+					Closed = False
+					Point = {(0.0232143, 0.0166667), (0, 0), (-0.0232143, -0.0166667)}
+					Point = {(-0.255357, -0.188095), (-0.284524, -0.211905), (-0.31369, -0.235714)}
+				}
+
+			}
+
+		}
+
+	}
+
+}
+

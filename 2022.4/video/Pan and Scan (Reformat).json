@@ -1,0 +1,342 @@
+{
+    "name": "Pan and Scan (Reformat)",
+    "operations": {
+        "PanScan_2": {
+            "TypeDefinitions": {
+                "ints": {
+                    "aafInt32": [
+                        "01010700-0000-0000-060e-2b3401040101",
+                        4,
+                        true
+                    ],
+                    "aafUInt16": [
+                        "01010200-0000-0000-060e-2b3401040101",
+                        2,
+                        false
+                    ]
+                },
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                },
+                "enums": {
+                    "Boolean": [
+                        "01040100-0000-0000-060e-2b3401040101",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        {
+                            "0": "False",
+                            "1": "True"
+                        }
+                    ]
+                },
+                "records": {
+                    "Rational": [
+                        "03010100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Numerator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ],
+                            [
+                                "Denominator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ]
+                        ]
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    "AvidParameterByteOrder",
+                    ""
+                ],
+                "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AvidEffectID",
+                    ""
+                ],
+                "8d56814d-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "AFX_FG_KEY2_ENABLED_U",
+                    ""
+                ],
+                "8d568153-847e-11d5-935a-50f857c10000": [
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    "AFX_FG_KEY_SS_ENABLED_U",
+                    ""
+                ],
+                "8d568170-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_ASPECT_SOURCE_U",
+                    ""
+                ],
+                "8d568171-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_ASPECT_TARGET_U",
+                    ""
+                ],
+                "8d56828f-847e-11d5-935a-50f857c10000": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_GRID_ENABLED",
+                    ""
+                ],
+                "8d568290-847e-11d5-935a-50f857c10000": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_GRID_TYPE",
+                    ""
+                ],
+                "8d568291-847e-11d5-935a-50f857c10000": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_GRID_TRANSFER",
+                    ""
+                ],
+                "8d568292-847e-11d5-935a-50f857c10000": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_GRID_FIELDS",
+                    ""
+                ],
+                "8d568293-847e-11d5-935a-50f857c10000": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_GRID_SUBFIELDS",
+                    ""
+                ],
+                "8d568294-847e-11d5-935a-50f857c10000": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_GRID_SRC_WID",
+                    ""
+                ],
+                "8d568295-847e-11d5-935a-50f857c10000": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_GRID_SRC_HEI",
+                    ""
+                ],
+                "8d568296-847e-11d5-935a-50f857c10000": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_GRID_SRC_OFF_H",
+                    ""
+                ],
+                "8d568297-847e-11d5-935a-50f857c10000": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_GRID_SRC_OFF_V",
+                    ""
+                ],
+                "8d568298-847e-11d5-935a-50f857c10000": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_GRID_SRC_INSET",
+                    ""
+                ],
+                "8d568299-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_GRID_HPOS_OFFSET",
+                    ""
+                ],
+                "8d56829a-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_GRID_VPOS_OFFSET",
+                    ""
+                ],
+                "8d56829b-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_GRID_HSCALE_OFFSET",
+                    ""
+                ],
+                "8d56829c-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_GRID_VSCALE_OFFSET",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID"
+                ],
+                "Bypass": 0,
+                "NumberInputs": 1,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Picture",
+                "Identification": "fad869d1-2d7c-4f51-9e58-ad9d406d6156",
+                "Description": "",
+                "Name": "PanScan_2"
+            },
+            "ComponentAttributeList": {
+                "_BORDER_FIXED": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                "_EFFECT_PLUGIN_TYPE": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AVX2"
+                ],
+                "_EFFECT_PLUGIN_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Pan and Scan"
+                ],
+                "_EFFECT_PLUGIN_CLASS": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Reformat"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "ccbf7662-ac25-4f8f-8abb-0a32df222f71"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "Avid Technology, Inc."
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "409578e0-2ee2-4f08-ac91-19df6b1cc737"
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_VERSION": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1.0"
+                ],
+                "_EFFECT_PLUGIN_SKU": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_IGNORE_TRACKING": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ]
+            },
+            "Parameters": [
+                [
+                    "8d56814d-847e-11d5-935a-50f857c10000 AFX_FG_KEY2_ENABLED_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    false
+                ],
+                [
+                    "8d568153-847e-11d5-935a-50f857c10000 AFX_FG_KEY_SS_ENABLED_U",
+                    "ConstantValue",
+                    "01040100-0000-0000-060e-2b3401040101 Boolean",
+                    false
+                ],
+                [
+                    "8d568170-847e-11d5-935a-50f857c10000 AFX_ASPECT_SOURCE_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "0"
+                ],
+                [
+                    "8d568171-847e-11d5-935a-50f857c10000 AFX_ASPECT_TARGET_U",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "0"
+                ],
+                [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "ConstantValue",
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    18761
+                ],
+                [
+                    "8d56828f-847e-11d5-935a-50f857c10000 AFX_GRID_ENABLED",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8d568290-847e-11d5-935a-50f857c10000 AFX_GRID_TYPE",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8d568291-847e-11d5-935a-50f857c10000 AFX_GRID_TRANSFER",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8d568292-847e-11d5-935a-50f857c10000 AFX_GRID_FIELDS",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8d568293-847e-11d5-935a-50f857c10000 AFX_GRID_SUBFIELDS",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8d568294-847e-11d5-935a-50f857c10000 AFX_GRID_SRC_WID",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8d568295-847e-11d5-935a-50f857c10000 AFX_GRID_SRC_HEI",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8d568296-847e-11d5-935a-50f857c10000 AFX_GRID_SRC_OFF_H",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8d568297-847e-11d5-935a-50f857c10000 AFX_GRID_SRC_OFF_V",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8d568298-847e-11d5-935a-50f857c10000 AFX_GRID_SRC_INSET",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8d568299-847e-11d5-935a-50f857c10000 AFX_GRID_HPOS_OFFSET",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "0"
+                ],
+                [
+                    "8d56829a-847e-11d5-935a-50f857c10000 AFX_GRID_VPOS_OFFSET",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "0"
+                ],
+                [
+                    "8d56829b-847e-11d5-935a-50f857c10000 AFX_GRID_HSCALE_OFFSET",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "100"
+                ],
+                [
+                    "8d56829c-847e-11d5-935a-50f857c10000 AFX_GRID_VSCALE_OFFSET",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "100"
+                ],
+                [
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "454646325f50414e5f5343414e0"
+                ]
+            ]
+        }
+    }
+}

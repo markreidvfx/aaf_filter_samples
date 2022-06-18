@@ -1,0 +1,284 @@
+{
+    "name": "EQ3 7-Band (EQ3 7-Band)",
+    "operations": {
+        "Audio Suite Plugin": {
+            "TypeDefinitions": {
+                "strings": {
+                    "aafString": [
+                        "01100200-0000-0000-060e-2b3401040101",
+                        "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ],
+                    "AudioSuitePIChunkData": [
+                        "5cf19caf-ef83-11d3-9ff5-0004ac969f50",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ],
+                    "AudioSuitePIChunkArray": [
+                        "4e4d8f60-eefd-11d3-9ff5-0004ac969f50",
+                        "4e4d8f5f-eefd-11d3-9ff5-0004ac969f50 AudioSuitePlugInChunk"
+                    ]
+                },
+                "fixed_arrays": {
+                    "AvidString4": [
+                        "0f96cb41-2aa8-11d4-a00f-0004ac969f50",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                        4
+                    ],
+                    "AvidWideString32": [
+                        "3271a34f-f3a1-11d3-9ff5-0004ac969f50",
+                        "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                        32
+                    ]
+                },
+                "records": {
+                    "AudioSuitePlugInChunk": [
+                        "4e4d8f5f-eefd-11d3-9ff5-0004ac969f50",
+                        [
+                            [
+                                "Version",
+                                "01010300-0000-0000-060e-2b3401040101 aafUInt32"
+                            ],
+                            [
+                                "ManufacturerID",
+                                "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4"
+                            ],
+                            [
+                                "ProductID",
+                                "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4"
+                            ],
+                            [
+                                "PlugInID",
+                                "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4"
+                            ],
+                            [
+                                "ChunkID",
+                                "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4"
+                            ],
+                            [
+                                "Name",
+                                "3271a34f-f3a1-11d3-9ff5-0004ac969f50 AvidWideString32"
+                            ],
+                            [
+                                "ChunkDataUID",
+                                "01030100-0000-0000-060e-2b3401040101 AUID"
+                            ]
+                        ]
+                    ],
+                    "AUID": [
+                        "01030100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Data1",
+                                "01010300-0000-0000-060e-2b3401040101 aafUInt32"
+                            ],
+                            [
+                                "Data2",
+                                "01010200-0000-0000-060e-2b3401040101 aafUInt16"
+                            ],
+                            [
+                                "Data3",
+                                "01010200-0000-0000-060e-2b3401040101 aafUInt16"
+                            ],
+                            [
+                                "Data4",
+                                "04010800-0000-0000-060e-2b3401040101 aafUInt8Array8"
+                            ]
+                        ]
+                    ]
+                },
+                "ints": {
+                    "aafUInt32": [
+                        "01010300-0000-0000-060e-2b3401040101",
+                        4,
+                        false
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "7c254c09-ee1e-11d3-9ff5-0004ac969f50": [
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "AudioASPIManufacturerID",
+                    ""
+                ],
+                "80bcd031-eefa-11d3-9ff5-0004ac969f50": [
+                    "5cf19caf-ef83-11d3-9ff5-0004ac969f50 AudioSuitePIChunkData",
+                    "AudioASPIPlugInChunkDataID",
+                    ""
+                ],
+                "338a2f41-ee1e-11d3-9ff5-0004ac969f50": [
+                    "4e4d8f60-eefd-11d3-9ff5-0004ac969f50 AudioSuitePIChunkArray",
+                    "AvidASPIChunks",
+                    ""
+                ],
+                "76401b7f-ee1e-11d3-9ff5-0004ac969f50": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AvidASPIPlugInName",
+                    ""
+                ],
+                "81ad80dd-ee1e-11d3-9ff5-0004ac969f50": [
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "AudioASPIProductID",
+                    ""
+                ],
+                "e735afe6-d828-45c3-b526-44e7ac24c691": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AudioASPIPresetPathID",
+                    ""
+                ],
+                "85ffc3fd-ee1e-11d3-9ff5-0004ac969f50": [
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "AudioASPIPlugInID",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "7c254c09-ee1e-11d3-9ff5-0004ac969f50 AudioASPIManufacturerID",
+                    "80bcd031-eefa-11d3-9ff5-0004ac969f50 AudioASPIPlugInChunkDataID",
+                    "338a2f41-ee1e-11d3-9ff5-0004ac969f50 AvidASPIChunks",
+                    "76401b7f-ee1e-11d3-9ff5-0004ac969f50 AvidASPIPlugInName",
+                    "81ad80dd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIProductID",
+                    "e735afe6-d828-45c3-b526-44e7ac24c691 AudioASPIPresetPathID",
+                    "85ffc3fd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIPlugInID"
+                ],
+                "Bypass": 0,
+                "NumberInputs": 1,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Sound",
+                "Identification": "f1db0f24-8d64-11d3-80df-006008143e6f",
+                "Description": "",
+                "Name": "Audio Suite Plugin"
+            },
+            "ComponentAttributeList": {
+                "_EFFECT_PLUGIN_TYPE": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "AAXClip"
+                ],
+                "_EFFECT_PLUGIN_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "EQ3 7-Band"
+                ],
+                "_EFFECT_PLUGIN_CLASS": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "EQ"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "1147758441"
+                ],
+                "_EFFECT_PLUGIN_MANUFACTURER_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_ID": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "876045619"
+                ],
+                "_EFFECT_PLUGIN_PRODUCT_NAME": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_VERSION": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "21.3.0.171"
+                ],
+                "_EFFECT_PLUGIN_SKU": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    ""
+                ],
+                "_EFFECT_PLUGIN_CACHE_INFO": [
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "EQ3 7-Band ### AudioSuite"
+                ],
+                "_AUDIO_SUITE_EFFECT_0_ALL_CHUNKS": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "58200ffffffff6967694433653734617165376b636c6517436f6d706c65746520436f6e74726f6c732053746174650000000011116c5f68616b330000006c5f68616b31000000645f696e70740000000000645f6f75747000000000006c5f506873650000006c5f687072670000016c5f696e2031000000645f68706671003ff00000006c5f68706673000000645f667271310040340000006c5f696e2032000001645f676169320000000000645f66727132004059000003645f626e6432003ff00000006c5f6c6672670000016c5f696e2033000001645f676169330000000000645f66727133004068fffffffffffd645f626e6433003ff00000006c5f696e2034000001645f676169340000000000645f6672713400408f3ffffffffffe645f626e6434003ff00000006c5f696e2035000001645f676169350000000000645f6672713500409f3fffffffffff645f626e6435003ff00000006c5f696e2036000001645f676169360000000000645f667271360040b76ffffffffffb645f626e6436003ff00000006c5f686672670000016c5f6c7072670000016c5f696e2037000000645f6c706671003ff00000006c5f6c706673000000645f667271370040d387fffffffffb6c5f68616b32000000"
+                ]
+            },
+            "Parameters": [
+                [
+                    "7c254c09-ee1e-11d3-9ff5-0004ac969f50 AudioASPIManufacturerID",
+                    "ConstantValue",
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "69676944"
+                ],
+                [
+                    "80bcd031-eefa-11d3-9ff5-0004ac969f50 AudioASPIPlugInChunkDataID",
+                    "ConstantValue",
+                    "5cf19caf-ef83-11d3-9ff5-0004ac969f50 AudioSuitePIChunkData",
+                    "11116c5f68616b330000006c5f68616b31000000645f696e70740000000000645f6f75747000000000006c5f506873650000006c5f687072670000016c5f696e2031000000645f68706671003ff00000006c5f68706673000000645f667271310040340000006c5f696e2032000001645f676169320000000000645f66727132004059000003645f626e6432003ff00000006c5f6c6672670000016c5f696e2033000001645f676169330000000000645f66727133004068fffffffffffd645f626e6433003ff00000006c5f696e2034000001645f676169340000000000645f6672713400408f3ffffffffffe645f626e6434003ff00000006c5f696e2035000001645f676169350000000000645f6672713500409f3fffffffffff645f626e6435003ff00000006c5f696e2036000001645f676169360000000000645f667271360040b76ffffffffffb645f626e6436003ff00000006c5f686672670000016c5f6c7072670000016c5f696e2037000000645f6c706671003ff00000006c5f6c706673000000645f667271370040d387fffffffffb6c5f68616b32000000"
+                ],
+                [
+                    "338a2f41-ee1e-11d3-9ff5-0004ac969f50 AvidASPIChunks",
+                    "ConstantValue",
+                    "4e4d8f60-eefd-11d3-9ff5-0004ac969f50 AudioSuitePIChunkArray",
+                    [
+                        [
+                            "4e4d8f5f-eefd-11d3-9ff5-0004ac969f50 AudioSuitePlugInChunk",
+                            [
+                                [
+                                    "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                                    4294967295
+                                ],
+                                [
+                                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                                    "69676944"
+                                ],
+                                [
+                                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                                    "33653734"
+                                ],
+                                [
+                                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                                    "61716537"
+                                ],
+                                [
+                                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                                    "6b636c65"
+                                ],
+                                [
+                                    "3271a34f-f3a1-11d3-9ff5-0004ac969f50 AvidWideString32",
+                                    "436f6d706c65746520436f6e74726f6c73205374617465000000000000000000"
+                                ],
+                                [
+                                    "01030100-0000-0000-060e-2b3401040101 AUID",
+                                    "80bcd031-eefa-11d3-9ff5-0004ac969f50"
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    "76401b7f-ee1e-11d3-9ff5-0004ac969f50 AvidASPIPlugInName",
+                    "ConstantValue",
+                    "01100200-0000-0000-060e-2b3401040101 aafString",
+                    "EQ3 7-Band"
+                ],
+                [
+                    "81ad80dd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIProductID",
+                    "ConstantValue",
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "33653734"
+                ],
+                [
+                    "e735afe6-d828-45c3-b526-44e7ac24c691 AudioASPIPresetPathID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "3c666163746f72792064656661756c743e"
+                ],
+                [
+                    "85ffc3fd-ee1e-11d3-9ff5-0004ac969f50 AudioASPIPlugInID",
+                    "ConstantValue",
+                    "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+                    "61716537"
+                ]
+            ]
+        }
+    }
+}
