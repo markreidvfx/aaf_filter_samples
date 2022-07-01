@@ -1,0 +1,1568 @@
+{
+    "name": "spline02",
+    "operations": {
+        "SpatialAdapter": {
+            "TypeDefinitions": {
+                "ints": {
+                    "aafInt32": [
+                        "01010700-0000-0000-060e-2b3401040101",
+                        4,
+                        true
+                    ],
+                    "aafUInt16": [
+                        "01010200-0000-0000-060e-2b3401040101",
+                        2,
+                        false
+                    ]
+                },
+                "records": {
+                    "Rational": [
+                        "03010100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Numerator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ],
+                            [
+                                "Denominator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ]
+                        ]
+                    ]
+                },
+                "var_arrays": {
+                    "AvidBagOfBits": [
+                        "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                        "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    "AvidParameterByteOrder",
+                    ""
+                ],
+                "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "AvidEffectID",
+                    ""
+                ],
+                "7900ba08-e97e-4773-8bc8-b7c0412fa3ab": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_SOURCE_WID_DEN",
+                    ""
+                ],
+                "84159810-a552-4a0f-854e-4b53dd8a7630": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_FRAMING_HEI_NUM",
+                    ""
+                ],
+                "ee556712-b0b6-45e8-8d4f-61a7d93063d4": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_VALID_POSY_DEN",
+                    ""
+                ],
+                "6d84031a-fa06-446d-9e2e-8773f12f49e1": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_VALID_POSY_NUM",
+                    ""
+                ],
+                "a95da51b-d9f9-4af1-84a5-f121b3b00075": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_FRAMING_WID_DEN",
+                    ""
+                ],
+                "06bcbf29-79a9-42ec-bdd6-ba81e2f907d8": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_FRAMING_POSY_NUM",
+                    ""
+                ],
+                "f7ec5d2c-c1c2-48b5-b034-b40b55f5a5a0": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_FRAMING_POSX_DEN",
+                    ""
+                ],
+                "8f32fa40-3b04-4c24-b7e6-878ce2c35ac5": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "AFX_SPATIAL_DVE_ROT_DEFAULT",
+                    ""
+                ],
+                "445f9f4f-5d5b-420e-a767-1c1c7ac13da7": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_VALID_HEI_DEN",
+                    ""
+                ],
+                "e7eedb4f-5343-44ea-aa7e-0fe49e180631": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_FRAMING_POSX_NUM",
+                    ""
+                ],
+                "33950f51-7b5e-45cd-9d62-bd392abb6194": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_ESSENCE_POSY_NUM",
+                    ""
+                ],
+                "50fe9f55-db11-48c9-b46e-39ff7348f65e": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_ESSENCE_HEI_NUM",
+                    ""
+                ],
+                "7fa2b160-1d1d-4681-a6f2-e8109fce0a01": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_SOURCE_WID_NUM",
+                    ""
+                ],
+                "afaa1365-6f7a-4b14-900e-a001166ed2c3": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_SOURCE_HEI_DEN",
+                    ""
+                ],
+                "bd164267-a373-4f41-b92f-db9503e0c850": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_ESSENCE_WID_NUM",
+                    ""
+                ],
+                "18b82c6a-743f-4bcb-ba72-885e99358978": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_VALID_WID_NUM",
+                    ""
+                ],
+                "713a9f6c-6dcf-4114-85af-c64dfb1b3320": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_REFORMAT",
+                    ""
+                ],
+                "f9e7a26e-6f93-4130-a9c3-e4d0e6e33775": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_VALID_HEI_NUM",
+                    ""
+                ],
+                "cde7fa80-69b0-445a-b9da-acf08208ea60": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_VALID_POSX_NUM",
+                    ""
+                ],
+                "e9997287-17b6-4eb9-87d6-bb6da372ee08": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_ESSENCE_POSX_NUM",
+                    ""
+                ],
+                "2a8c1d97-990a-475f-9a16-73bddf4f07a9": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_SOURCE_POSX_NUM",
+                    ""
+                ],
+                "3906d29e-4f5d-4efe-8979-64fbcf67ce15": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_FRAMING_WID_NUM",
+                    ""
+                ],
+                "535e2aa6-1ca7-4357-9d93-a80c571e1a98": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_VALID_POSX_DEN",
+                    ""
+                ],
+                "b30ae6a6-030a-427a-af96-e1715837125b": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_SOURCE_HEI_NUM",
+                    ""
+                ],
+                "f25cfaab-4b64-4c92-985f-e49dc4b8fd90": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_ESSENCE_WID_DEN",
+                    ""
+                ],
+                "8519d4b2-2a8b-4942-a411-37429808e3cd": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_FRAMING_HEI_DEN",
+                    ""
+                ],
+                "283f92b7-d0df-4641-9768-bb9bfe8c653e": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_VALID_WID_DEN",
+                    ""
+                ],
+                "c224fec8-6a36-4899-b72a-b4c3e6027ef5": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_ESSENCE_POSY_DEN",
+                    ""
+                ],
+                "43907fd5-080f-4b68-848a-b5b1a3be22b9": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_SOURCE_POSX_DEN",
+                    ""
+                ],
+                "22c4a1d5-3038-4a97-8e03-d0fa7a64cad3": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_FRAMING_POSY_DEN",
+                    ""
+                ],
+                "8af7a5dc-367b-4919-afc7-5ca00a5bd558": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "MC AVX2 EFFECT VERSION",
+                    ""
+                ],
+                "b26425e7-d6af-41dd-8cdc-c23095aa09b8": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_SOURCE_POSY_NUM",
+                    ""
+                ],
+                "65156de8-e7e8-442b-b429-5abeb331e967": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_ESSENCE_HEI_DEN",
+                    ""
+                ],
+                "532225eb-454c-41cc-af0b-d0ce21878f40": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_ESSENCE_POSX_DEN",
+                    ""
+                ],
+                "58c351fd-e77c-4695-bfae-a13ed6e424d9": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AFX_SPATIAL_SOURCE_POSY_DEN",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID"
+                ],
+                "Bypass": 1,
+                "NumberInputs": 1,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": false,
+                "DataDefinition": "Picture",
+                "Identification": "1bb40c05-c083-4d4f-8398-165ed028aa65",
+                "Description": "",
+                "Name": "SpatialAdapter"
+            },
+            "ComponentAttributeList": {
+                "_BORDER_FIXED": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ]
+            },
+            "Parameters": [
+                [
+                    "7900ba08-e97e-4773-8bc8-b7c0412fa3ab AFX_SPATIAL_SOURCE_WID_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "84159810-a552-4a0f-854e-4b53dd8a7630 AFX_SPATIAL_FRAMING_HEI_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    900
+                ],
+                [
+                    "ee556712-b0b6-45e8-8d4f-61a7d93063d4 AFX_SPATIAL_VALID_POSY_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "6d84031a-fa06-446d-9e2e-8773f12f49e1 AFX_SPATIAL_VALID_POSY_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -450
+                ],
+                [
+                    "a95da51b-d9f9-4af1-84a5-f121b3b00075 AFX_SPATIAL_FRAMING_WID_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "06bcbf29-79a9-42ec-bdd6-ba81e2f907d8 AFX_SPATIAL_FRAMING_POSY_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -450
+                ],
+                [
+                    "f7ec5d2c-c1c2-48b5-b034-b40b55f5a5a0 AFX_SPATIAL_FRAMING_POSX_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "8f32fa40-3b04-4c24-b7e6-878ce2c35ac5 AFX_SPATIAL_DVE_ROT_DEFAULT",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "0"
+                ],
+                [
+                    "445f9f4f-5d5b-420e-a767-1c1c7ac13da7 AFX_SPATIAL_VALID_HEI_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "e7eedb4f-5343-44ea-aa7e-0fe49e180631 AFX_SPATIAL_FRAMING_POSX_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -600
+                ],
+                [
+                    "33950f51-7b5e-45cd-9d62-bd392abb6194 AFX_SPATIAL_ESSENCE_POSY_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -450
+                ],
+                [
+                    "50fe9f55-db11-48c9-b46e-39ff7348f65e AFX_SPATIAL_ESSENCE_HEI_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    900
+                ],
+                [
+                    "7fa2b160-1d1d-4681-a6f2-e8109fce0a01 AFX_SPATIAL_SOURCE_WID_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1200
+                ],
+                [
+                    "afaa1365-6f7a-4b14-900e-a001166ed2c3 AFX_SPATIAL_SOURCE_HEI_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "bd164267-a373-4f41-b92f-db9503e0c850 AFX_SPATIAL_ESSENCE_WID_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1200
+                ],
+                [
+                    "18b82c6a-743f-4bcb-ba72-885e99358978 AFX_SPATIAL_VALID_WID_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1200
+                ],
+                [
+                    "713a9f6c-6dcf-4114-85af-c64dfb1b3320 AFX_SPATIAL_REFORMAT",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -1
+                ],
+                [
+                    "f9e7a26e-6f93-4130-a9c3-e4d0e6e33775 AFX_SPATIAL_VALID_HEI_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    900
+                ],
+                [
+                    "c0038672-a8cf-11d3-a05b-006094eb75cb AvidParameterByteOrder",
+                    "ConstantValue",
+                    "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+                    18761
+                ],
+                [
+                    "cde7fa80-69b0-445a-b9da-acf08208ea60 AFX_SPATIAL_VALID_POSX_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -600
+                ],
+                [
+                    "e9997287-17b6-4eb9-87d6-bb6da372ee08 AFX_SPATIAL_ESSENCE_POSX_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -600
+                ],
+                [
+                    "2a8c1d97-990a-475f-9a16-73bddf4f07a9 AFX_SPATIAL_SOURCE_POSX_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -600
+                ],
+                [
+                    "3906d29e-4f5d-4efe-8979-64fbcf67ce15 AFX_SPATIAL_FRAMING_WID_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1200
+                ],
+                [
+                    "535e2aa6-1ca7-4357-9d93-a80c571e1a98 AFX_SPATIAL_VALID_POSX_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "b30ae6a6-030a-427a-af96-e1715837125b AFX_SPATIAL_SOURCE_HEI_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    900
+                ],
+                [
+                    "f25cfaab-4b64-4c92-985f-e49dc4b8fd90 AFX_SPATIAL_ESSENCE_WID_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "8519d4b2-2a8b-4942-a411-37429808e3cd AFX_SPATIAL_FRAMING_HEI_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "283f92b7-d0df-4641-9768-bb9bfe8c653e AFX_SPATIAL_VALID_WID_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "c224fec8-6a36-4899-b72a-b4c3e6027ef5 AFX_SPATIAL_ESSENCE_POSY_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "43907fd5-080f-4b68-848a-b5b1a3be22b9 AFX_SPATIAL_SOURCE_POSX_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "22c4a1d5-3038-4a97-8e03-d0fa7a64cad3 AFX_SPATIAL_FRAMING_POSY_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "93994bd6-a81d-11d3-a05b-006094eb75cb AvidEffectID",
+                    "ConstantValue",
+                    "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+                    "494e545f4546465f5350415449414c5f414441505445520"
+                ],
+                [
+                    "8af7a5dc-367b-4919-afc7-5ca00a5bd558 MC AVX2 EFFECT VERSION",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "b26425e7-d6af-41dd-8cdc-c23095aa09b8 AFX_SPATIAL_SOURCE_POSY_NUM",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -450
+                ],
+                [
+                    "65156de8-e7e8-442b-b429-5abeb331e967 AFX_SPATIAL_ESSENCE_HEI_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "532225eb-454c-41cc-af0b-d0ce21878f40 AFX_SPATIAL_ESSENCE_POSX_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                [
+                    "58c351fd-e77c-4695-bfae-a13ed6e424d9 AFX_SPATIAL_SOURCE_POSY_DEN",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ]
+            ]
+        },
+        "Motion Control": {
+            "TypeDefinitions": {
+                "ints": {
+                    "aafInt32": [
+                        "01010700-0000-0000-060e-2b3401040101",
+                        4,
+                        true
+                    ]
+                },
+                "records": {
+                    "Rational": [
+                        "03010100-0000-0000-060e-2b3401040101",
+                        [
+                            [
+                                "Numerator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ],
+                            [
+                                "Denominator",
+                                "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                            ]
+                        ]
+                    ]
+                }
+            },
+            "ParameterDefinitions": {
+                "f7ffed29-fc8e-43ed-943a-4b57b5c157ee": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AvidMotionPulldown",
+                    ""
+                ],
+                "8dde1839-6862-4874-a1e9-4fbd1164f22a": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AvidMotionOutputFormat",
+                    ""
+                ],
+                "5b22ff71-c51b-11d3-a069-006094eb75cb": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AvidPhase",
+                    ""
+                ],
+                "72559a80-24d7-11d3-8a50-0050040ef7d2": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "SpeedRatio",
+                    ""
+                ],
+                "1c5a02d5-e503-4ca6-8617-d7914bb8ac03": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    "AvidMotionInputFormat",
+                    ""
+                ],
+                "8d56827c-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "PARAM_SPEED_MAP_U",
+                    ""
+                ],
+                "8d56827d-847e-11d5-935a-50f857c10000": [
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "PARAM_SPEED_OFFSET_MAP_U",
+                    ""
+                ]
+            },
+            "OperationDefinition": {
+                "ParametersDefined": [
+                    "f7ffed29-fc8e-43ed-943a-4b57b5c157ee AvidMotionPulldown",
+                    "8dde1839-6862-4874-a1e9-4fbd1164f22a AvidMotionOutputFormat",
+                    "5b22ff71-c51b-11d3-a069-006094eb75cb AvidPhase",
+                    "72559a80-24d7-11d3-8a50-0050040ef7d2 SpeedRatio",
+                    "1c5a02d5-e503-4ca6-8617-d7914bb8ac03 AvidMotionInputFormat"
+                ],
+                "Bypass": 0,
+                "NumberInputs": 1,
+                "OperationCategory": "OperationCategory_Effect",
+                "IsTimeWarp": true,
+                "DataDefinition": "Picture",
+                "Identification": "9d2ea890-0968-11d3-8a38-0050040ef7d2",
+                "Description": "",
+                "Name": "Motion Control"
+            },
+            "ComponentAttributeList": {
+                "_SFX_IGNORE_RENDER_SETTING": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                "_SFX_RENDER": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    2
+                ],
+                "_MIXMATCH_MOTIONADAPTER": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    4
+                ],
+                "_NEW_SHAPE_REFERENCE_FRAME": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    1
+                ],
+                "_MFX_INPUT_FORMAT": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    2
+                ],
+                "_MFX_OUTPUT_FORMAT": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    2
+                ],
+                "_FX_CURRENT_KF": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    17
+                ],
+                "_MFX_VIEW_SPD_LEFT": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -10
+                ],
+                "_MFX_VIEW_SPD_RIGHT": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    82
+                ],
+                "_MFX_VIEW_SPD_TOP": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    186
+                ],
+                "_MFX_VIEW_SPD_BOTTOM": [
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    -64
+                ]
+            },
+            "Parameters": [
+                [
+                    "f7ffed29-fc8e-43ed-943a-4b57b5c157ee AvidMotionPulldown",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    0
+                ],
+                [
+                    "8dde1839-6862-4874-a1e9-4fbd1164f22a AvidMotionOutputFormat",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    2
+                ],
+                [
+                    "5b22ff71-c51b-11d3-a069-006094eb75cb AvidPhase",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    39
+                ],
+                [
+                    "8d56827c-847e-11d5-935a-50f857c10000 PARAM_SPEED_MAP_U",
+                    "VaryingValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "LinearInterp",
+                    [
+                        {
+                            "Time": "-17",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "-27589011/40000000"
+                            ],
+                            "PARAM_SPEED_MAP_U": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "-2"
+                            ]
+                        },
+                        {
+                            "Time": "6",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "21019207/12500000"
+                            ]
+                        },
+                        {
+                            "Time": "10",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "141016109/200000000"
+                            ]
+                        },
+                        {
+                            "Time": "13",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "118011169/100000000"
+                            ]
+                        },
+                        {
+                            "Time": "14",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "135754647/100000000"
+                            ]
+                        },
+                        {
+                            "Time": "15",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "164795539/100000000"
+                            ]
+                        },
+                        {
+                            "Time": "16",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "88197021/50000000"
+                            ]
+                        },
+                        {
+                            "Time": "18",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "10494817/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "19",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "221156977/100000000"
+                            ]
+                        },
+                        {
+                            "Time": "21",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "46716233/20000000"
+                            ]
+                        },
+                        {
+                            "Time": "28",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "21104399/31250000"
+                            ]
+                        },
+                        {
+                            "Time": "32",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "1001/1000"
+                            ]
+                        },
+                        {
+                            "Time": "36",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "357377323/1000000000"
+                            ]
+                        },
+                        {
+                            "Time": "40",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "-3/10"
+                            ]
+                        },
+                        {
+                            "Time": "44",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "-3/10"
+                            ]
+                        },
+                        {
+                            "Time": "47",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "1001/1000"
+                            ]
+                        },
+                        {
+                            "Time": "51",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "34622057/20000000"
+                            ]
+                        },
+                        {
+                            "Time": "70",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "937637363/1000000000"
+                            ]
+                        }
+                    ]
+                ],
+                [
+                    "8d56827d-847e-11d5-935a-50f857c10000 PARAM_SPEED_OFFSET_MAP_U",
+                    "VaryingValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "LinearInterp",
+                    [
+                        {
+                            "Time": "0",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "199525773/200000000"
+                            ]
+                        },
+                        {
+                            "Time": "1/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "3073669/2000000"
+                            ]
+                        },
+                        {
+                            "Time": "1",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "6568171/3125000"
+                            ]
+                        },
+                        {
+                            "Time": "3/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "33657119/12500000"
+                            ]
+                        },
+                        {
+                            "Time": "2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "330909891/100000000"
+                            ]
+                        },
+                        {
+                            "Time": "5/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "6174067/1562500"
+                            ]
+                        },
+                        {
+                            "Time": "3",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "28871759/6250000"
+                            ]
+                        },
+                        {
+                            "Time": "7/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "531333459/100000000"
+                            ]
+                        },
+                        {
+                            "Time": "4",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "75412029/12500000"
+                            ]
+                        },
+                        {
+                            "Time": "9/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "677836463/100000000"
+                            ]
+                        },
+                        {
+                            "Time": "5",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "754954153/100000000"
+                            ]
+                        },
+                        {
+                            "Time": "11/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "417324651/50000000"
+                            ]
+                        },
+                        {
+                            "Time": "6",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "916921909/100000000"
+                            ]
+                        },
+                        {
+                            "Time": "13/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "249748569/25000000"
+                            ]
+                        },
+                        {
+                            "Time": "7",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "5375687/500000"
+                            ]
+                        },
+                        {
+                            "Time": "15/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "114517767/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "8",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "120911509/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "17/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "126694967/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "9",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "131868139/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "19/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "68215513/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "10",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "35095907/2500000"
+                            ]
+                        },
+                        {
+                            "Time": "21/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "18005989/1250000"
+                            ]
+                        },
+                        {
+                            "Time": "11",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "37021983/2500000"
+                            ]
+                        },
+                        {
+                            "Time": "23/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "152523811/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "12",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "157355549/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "25/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "162583147/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "13",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "42051651/2500000"
+                            ]
+                        },
+                        {
+                            "Time": "27/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "174241193/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "14",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "90359207/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "29/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "93864801/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "15",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "195461163/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "31/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "25472401/1250000"
+                            ]
+                        },
+                        {
+                            "Time": "16",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "6637373/312500"
+                            ]
+                        },
+                        {
+                            "Time": "33/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "27667981/1250000"
+                            ]
+                        },
+                        {
+                            "Time": "17",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "230707963/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "35/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "30061357/1250000"
+                            ]
+                        },
+                        {
+                            "Time": "18",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "15668283/625000"
+                            ]
+                        },
+                        {
+                            "Time": "37/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "130634527/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "19",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "136064921/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "39/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "283231757/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "20",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "294491499/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "41/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "305906543/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "21",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "31747689/1000000"
+                            ]
+                        },
+                        {
+                            "Time": "43/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "164481537/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "22",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "339871199/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "45/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "350186299/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "23",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "179954187/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "47/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "23064839/625000"
+                            ]
+                        },
+                        {
+                            "Time": "24",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "47196681/1250000"
+                            ]
+                        },
+                        {
+                            "Time": "49/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "192758223/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "25",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "19643321/500000"
+                            ]
+                        },
+                        {
+                            "Time": "51/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "49952921/1250000"
+                            ]
+                        },
+                        {
+                            "Time": "26",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "405787291/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "53/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "102839547/2500000"
+                            ]
+                        },
+                        {
+                            "Time": "27",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "20816803/500000"
+                            ]
+                        },
+                        {
+                            "Time": "55/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "420720907/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "28",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "424512729/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "57/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "17118657/400000"
+                            ]
+                        },
+                        {
+                            "Time": "29",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "431607727/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "59/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "217726283/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "30",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "219750471/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "61/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "88750571/2000000"
+                            ]
+                        },
+                        {
+                            "Time": "31",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "89641661/2000000"
+                            ]
+                        },
+                        {
+                            "Time": "63/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "113216823/2500000"
+                            ]
+                        },
+                        {
+                            "Time": "32",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "57216227/1250000"
+                            ]
+                        },
+                        {
+                            "Time": "65/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "462602021/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "33",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "233542039/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "67/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "47116387/1000000"
+                            ]
+                        },
+                        {
+                            "Time": "34",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "237420699/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "69/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "239058331/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "35",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "240494831/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "71/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "241730199/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "36",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "485528869/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "73/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "243596163/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "37",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "488445093/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "75/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "489287/10000"
+                            ]
+                        },
+                        {
+                            "Time": "38",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "244859023/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "77/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "489738231/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "39",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "97869511/2000000"
+                            ]
+                        },
+                        {
+                            "Time": "79/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "488546019/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "40",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "487333621/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "81/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "242920919/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "41",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "242170919/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "83/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "241420919/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "42",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "240670919/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "85/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "239920919/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "43",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "239170919/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "87/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "238420919/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "44",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "237670919/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "89/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "118547193/2500000"
+                            ]
+                        },
+                        {
+                            "Time": "45",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "118524547/2500000"
+                            ]
+                        },
+                        {
+                            "Time": "91/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "118772943/2500000"
+                            ]
+                        },
+                        {
+                            "Time": "46",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "238584761/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "93/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "240165719/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "47",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "242288761/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "95/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "489706859/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "48",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "123826267/2500000"
+                            ]
+                        },
+                        {
+                            "Time": "97/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "50135959/1000000"
+                            ]
+                        },
+                        {
+                            "Time": "49",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "126967607/2500000"
+                            ]
+                        },
+                        {
+                            "Time": "99/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "514837579/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "50",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "104452209/2000000"
+                            ]
+                        },
+                        {
+                            "Time": "101/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "21205633/400000"
+                            ]
+                        },
+                        {
+                            "Time": "51",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "538476919/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "103/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "273544949/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "52",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "69451211/1250000"
+                            ]
+                        },
+                        {
+                            "Time": "105/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "282012537/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "53",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "572336057/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "107/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "580542637/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "54",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "294322407/5000000"
+                            ]
+                        },
+                        {
+                            "Time": "109/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "596642587/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "55",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "604535957/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "111/2",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "612324923/10000000"
+                            ]
+                        },
+                        {
+                            "Time": "56",
+                            "Value": [
+                                "03010100-0000-0000-060e-2b3401040101 Rational",
+                                "310004743/5000000"
+                            ]
+                        }
+                    ]
+                ],
+                [
+                    "72559a80-24d7-11d3-8a50-0050040ef7d2 SpeedRatio",
+                    "ConstantValue",
+                    "03010100-0000-0000-060e-2b3401040101 Rational",
+                    "56/55"
+                ],
+                [
+                    "1c5a02d5-e503-4ca6-8617-d7914bb8ac03 AvidMotionInputFormat",
+                    "ConstantValue",
+                    "01010700-0000-0000-060e-2b3401040101 aafInt32",
+                    2
+                ]
+            ]
+        }
+    }
+}

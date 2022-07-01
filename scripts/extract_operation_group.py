@@ -160,7 +160,7 @@ def extract_operation(op_group):
                 varying_values.append(d)
 
             value.append(varying_values)
-            assert p.interpolation.name in ('LinearInterp', 'AvidCubicInterpolator')
+            assert p.interpolation.name in ('LinearInterp', 'ConstantInterp', 'AvidCubicInterpolator', 'AvidBezierInterpolator')
 
         elif isinstance(p, aaf2.misc.ConstantValue):
             value.append("ConstantValue")
@@ -256,7 +256,7 @@ def find_operation_groups(f):
     operations = []
     operation_name = None
     for mob in f.content.compositionmobs():
-        operation_name = mob.name.replace(".Exported.01", "")
+        operation_name = mob.name.split(".Exported")[0]
         for slot in mob.slots:
             for operation_group in iter_operation_group_components(slot.segment):
                 operations.append(operation_group)
