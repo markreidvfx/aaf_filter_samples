@@ -211,5 +211,79 @@
                 ]
             ]
         }
+    },
+    "parameter_definitions": {
+        "e9e9f37e-1029-4cf3-8ab8-6ec719e07647": [
+            "01010700-0000-0000-060e-2b3401040101 aafInt32",
+            "AvidDefaultPan",
+            ""
+        ],
+        "101cfd8f-dfce-11d3-9ff3-0004ac969f50": [
+            "01100200-0000-0000-060e-2b3401040101 aafString",
+            "AvidEQFilterName",
+            ""
+        ],
+        "1b8006a3-e3c6-11d3-9ff3-0004ac969f50": [
+            "01040100-0000-0000-060e-2b3401040101 Boolean",
+            "AvidEQFilterEnabled",
+            ""
+        ],
+        "f8c03cba-ac1e-11d3-80e4-006008143e6f": [
+            "c4c670ca-bd44-11d3-80e9-006008143e6f EqualizationBandArray",
+            "AvidEQBands",
+            ""
+        ],
+        "c72888dd-e6d7-4dce-85ce-cece8c2949e5": [
+            "3659b342-4f19-4316-9309-f139434a94e5 AvidPannerKindType",
+            "AvidPannerKind",
+            ""
+        ]
+    },
+    "typedefs": {
+        "ints": {
+            "aafInt32": [
+                "01010700-0000-0000-060e-2b3401040101",
+                4,
+                true
+            ]
+        },
+        "strings": {
+            "aafString": [
+                "01100200-0000-0000-060e-2b3401040101",
+                "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+            ]
+        },
+        "enums": {
+            "Boolean": [
+                "01040100-0000-0000-060e-2b3401040101",
+                "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                {
+                    "0": "False",
+                    "1": "True"
+                }
+            ],
+            "AvidPannerKindType": [
+                "3659b342-4f19-4316-9309-f139434a94e5",
+                "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                {
+                    "1": "AvidPannerKind_Stereo",
+                    "2": "AvidPannerKind_LCR",
+                    "3": "AvidPannerKind_Quad",
+                    "4": "AvidPannerKind_LCRS",
+                    "5": "AvidPannerKind_5dot0",
+                    "6": "AvidPannerKind_5dot1",
+                    "7": "AvidPannerKind_6dot0",
+                    "8": "AvidPannerKind_6dot1",
+                    "9": "AvidPannerKind_7dot0",
+                    "10": "AvidPannerKind_7dot1"
+                }
+            ]
+        },
+        "var_arrays": {
+            "EqualizationBandArray": [
+                "c4c670ca-bd44-11d3-80e9-006008143e6f",
+                "c4c670c9-bd44-11d3-80e9-006008143e6f EqualizationBand"
+            ]
+        }
     }
 }

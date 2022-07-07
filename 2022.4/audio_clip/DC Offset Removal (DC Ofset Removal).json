@@ -146,5 +146,88 @@
                 ]
             ]
         }
+    },
+    "parameter_definitions": {
+        "7c254c09-ee1e-11d3-9ff5-0004ac969f50": [
+            "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+            "AudioASPIManufacturerID",
+            ""
+        ],
+        "e9e9f37e-1029-4cf3-8ab8-6ec719e07647": [
+            "01010700-0000-0000-060e-2b3401040101 aafInt32",
+            "AvidDefaultPan",
+            ""
+        ],
+        "76401b7f-ee1e-11d3-9ff5-0004ac969f50": [
+            "01100200-0000-0000-060e-2b3401040101 aafString",
+            "AvidASPIPlugInName",
+            ""
+        ],
+        "81ad80dd-ee1e-11d3-9ff5-0004ac969f50": [
+            "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+            "AudioASPIProductID",
+            ""
+        ],
+        "c72888dd-e6d7-4dce-85ce-cece8c2949e5": [
+            "3659b342-4f19-4316-9309-f139434a94e5 AvidPannerKindType",
+            "AvidPannerKind",
+            ""
+        ],
+        "e735afe6-d828-45c3-b526-44e7ac24c691": [
+            "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+            "AudioASPIPresetPathID",
+            ""
+        ],
+        "85ffc3fd-ee1e-11d3-9ff5-0004ac969f50": [
+            "0f96cb41-2aa8-11d4-a00f-0004ac969f50 AvidString4",
+            "AudioASPIPlugInID",
+            ""
+        ]
+    },
+    "typedefs": {
+        "fixed_arrays": {
+            "AvidString4": [
+                "0f96cb41-2aa8-11d4-a00f-0004ac969f50",
+                "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                4
+            ]
+        },
+        "ints": {
+            "aafInt32": [
+                "01010700-0000-0000-060e-2b3401040101",
+                4,
+                true
+            ]
+        },
+        "strings": {
+            "aafString": [
+                "01100200-0000-0000-060e-2b3401040101",
+                "01100100-0000-0000-060e-2b3401040101 aafCharacter"
+            ]
+        },
+        "enums": {
+            "AvidPannerKindType": [
+                "3659b342-4f19-4316-9309-f139434a94e5",
+                "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                {
+                    "1": "AvidPannerKind_Stereo",
+                    "2": "AvidPannerKind_LCR",
+                    "3": "AvidPannerKind_Quad",
+                    "4": "AvidPannerKind_LCRS",
+                    "5": "AvidPannerKind_5dot0",
+                    "6": "AvidPannerKind_5dot1",
+                    "7": "AvidPannerKind_6dot0",
+                    "8": "AvidPannerKind_6dot1",
+                    "9": "AvidPannerKind_7dot0",
+                    "10": "AvidPannerKind_7dot1"
+                }
+            ]
+        },
+        "var_arrays": {
+            "AvidBagOfBits": [
+                "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+            ]
+        }
     }
 }

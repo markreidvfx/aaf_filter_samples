@@ -273,5 +273,150 @@
                 ]
             ]
         }
+    },
+    "parameter_definitions": {
+        "e4962320-2267-11d3-8a4c-0050040ef7d2": [
+            "03010100-0000-0000-060e-2b3401040101 Rational",
+            "Level",
+            ""
+        ],
+        "8bc42735-6bab-11d3-80cf-006008143e6f": [
+            "01010700-0000-0000-060e-2b3401040101 aafInt32",
+            "AvidBorderWidth",
+            ""
+        ],
+        "8bc42736-6bab-11d3-80cf-006008143e6f": [
+            "01010700-0000-0000-060e-2b3401040101 aafInt32",
+            "AvidBorderSoft",
+            ""
+        ],
+        "8bc4273c-6bab-11d3-80cf-006008143e6f": [
+            "8bc42732-6bab-11d3-80cf-006008143e6f AvidBounds",
+            "AvidBounds",
+            ""
+        ],
+        "8bc4273d-6bab-11d3-80cf-006008143e6f": [
+            "8bc42733-6bab-11d3-80cf-006008143e6f AvidColor",
+            "AvidColor",
+            ""
+        ],
+        "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+            "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+            "AvidParameterByteOrder",
+            ""
+        ],
+        "09997779-960e-11d3-a04e-006094eb75cb": [
+            "09997778-960e-11d3-a04e-006094eb75cb AvidGlobalKeyFrame",
+            "AvidGlobalKeyFrame",
+            ""
+        ],
+        "e9e9f37e-1029-4cf3-8ab8-6ec719e07647": [
+            "01010700-0000-0000-060e-2b3401040101 aafInt32",
+            "AvidDefaultPan",
+            ""
+        ],
+        "45312ed2-a1b8-11d3-a05a-006094eb75cb": [
+            "01010500-0000-0000-060e-2b3401040101 aafInt8",
+            "AvidEnableKeyFlagsKeyFrame",
+            ""
+        ],
+        "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+            "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+            "AvidEffectID",
+            ""
+        ],
+        "c72888dd-e6d7-4dce-85ce-cece8c2949e5": [
+            "3659b342-4f19-4316-9309-f139434a94e5 AvidPannerKindType",
+            "AvidPannerKind",
+            ""
+        ],
+        "386e92f8-978e-11d3-80e1-006008143e6f": [
+            "01040100-0000-0000-060e-2b3401040101 Boolean",
+            "AvidSelectedKeyFrame",
+            ""
+        ]
+    },
+    "typedefs": {
+        "records": {
+            "Rational": [
+                "03010100-0000-0000-060e-2b3401040101",
+                [
+                    [
+                        "Numerator",
+                        "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                    ],
+                    [
+                        "Denominator",
+                        "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                    ]
+                ]
+            ]
+        },
+        "ints": {
+            "aafInt32": [
+                "01010700-0000-0000-060e-2b3401040101",
+                4,
+                true
+            ],
+            "aafUInt16": [
+                "01010200-0000-0000-060e-2b3401040101",
+                2,
+                false
+            ],
+            "aafInt8": [
+                "01010500-0000-0000-060e-2b3401040101",
+                1,
+                true
+            ]
+        },
+        "fixed_arrays": {
+            "AvidBounds": [
+                "8bc42732-6bab-11d3-80cf-006008143e6f",
+                "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                48
+            ],
+            "AvidColor": [
+                "8bc42733-6bab-11d3-80cf-006008143e6f",
+                "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                68
+            ],
+            "AvidGlobalKeyFrame": [
+                "09997778-960e-11d3-a04e-006094eb75cb",
+                "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                16
+            ]
+        },
+        "var_arrays": {
+            "AvidBagOfBits": [
+                "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+            ]
+        },
+        "enums": {
+            "AvidPannerKindType": [
+                "3659b342-4f19-4316-9309-f139434a94e5",
+                "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                {
+                    "1": "AvidPannerKind_Stereo",
+                    "2": "AvidPannerKind_LCR",
+                    "3": "AvidPannerKind_Quad",
+                    "4": "AvidPannerKind_LCRS",
+                    "5": "AvidPannerKind_5dot0",
+                    "6": "AvidPannerKind_5dot1",
+                    "7": "AvidPannerKind_6dot0",
+                    "8": "AvidPannerKind_6dot1",
+                    "9": "AvidPannerKind_7dot0",
+                    "10": "AvidPannerKind_7dot1"
+                }
+            ],
+            "Boolean": [
+                "01040100-0000-0000-060e-2b3401040101",
+                "01010100-0000-0000-060e-2b3401040101 aafUInt8",
+                {
+                    "0": "False",
+                    "1": "True"
+                }
+            ]
+        }
     }
 }

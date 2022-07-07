@@ -11,6 +11,7 @@ import sys
 import aaf2
 import json
 from pprint import pprint
+from concurrent.futures import (ProcessPoolExecutor, as_completed)
 
 def serialize_auid(auid, name=None):
     if name:
@@ -25,7 +26,7 @@ def serialize_value(typedef, value, type_definitions):
 
     type_name = typedef.type_name
     pretty_type_name = serialize_auid(typedef.auid,  type_name)
-    if type_name in ('aafInt8', 'aafUInt16', 'aafInt32', 'aafUInt32', 'aafString', 'Boolean'):
+    if type_name in ('aafInt8', 'aafUInt16', 'aafInt32', 'aafUInt32', 'aafString', 'Boolean', 'AvidPannerKindType'):
         return [pretty_type_name, value]
 
     elif type_name in ('Rational', "AUID", ):
@@ -74,112 +75,8 @@ def serialize_value(typedef, value, type_definitions):
     print(value)
     assert False
 
-def extract_operation(op_group):
-    op_def = op_group.operation
-
-    parameter_definitions = {}
-    type_definitions = {}
-    data_definitions = {}
-
-    operation_group_name = None
-
-    # for key in op_group.keys():
-    #     if key not in ( 'Parameters', 'InputSegments', 'Operation', 'Length', 'DataDefinition', 'ComponentAttributeList', 'OpGroupMotionCtlOffsetMapAdjust'):
-    #         print("??", key)
-    #         op_group.dump()
-    #         assert False
-    #         pass
-
-    d = {}
-    for p in op_def.properties():
-        # print(p.name, p.value)
-
-        if p.name == 'ParametersDefined':
-            params = []
-            for param_def in p.value:
-                param_id = param_def.auid
-                parameter_definitions[param_id] =  param_def
-                params.append(serialize_auid(param_id, param_def.name))
-
-            d[p.name] = params
-
-        elif p.name in ("DataDefinition",):
-            d[p.name] = str(p.value.name)
-        elif p.name in ('Identification',):
-            d[p.name] = str(p.value)
-        else:
-            d[p.name] = p.value
-
-    # op_group.dump()
-
-    operation_group_name = d['Name']
-    operation_def = d
-
-
-    d = {}
-    for t in op_group['ComponentAttributeList']:
-        type_name = t.value_typedef.type_name
-        type_definitions[t.value_typedef.auid] = t.value_typedef
-        d[t.name] = serialize_value(t.value_typedef, t.value, type_definitions)
-
-    component_attrs = d
-
-    parameters = []
-    for p in op_group["Parameters"]:
-        param_def = p.parameterdef
-        parameter_definitions[param_def.auid] = param_def
-        pretty_param_name = serialize_auid(param_def.auid, param_def.name)
-
-        value = [pretty_param_name]
-        if isinstance(p, aaf2.misc.VaryingValue):
-            typedef = p.typedef
-            type_name = typedef.type_name
-            type_definitions[typedef.auid] = typedef
-
-            pretty_type_name = serialize_auid(typedef.auid,  type_name)
-            value.append("VaryingValue")
-            value.append(pretty_type_name)
-
-            value.append(p.interpolation.name)
-            varying_values = []
-
-            for point in p.pointlist:
-                sample_time = point['Time'].value
-
-                # wow this is annoying
-                indirect_typedef = point['Value'].typedef.decode_typedef(point['Value'].data)
-                type_definitions[indirect_typedef.auid] = indirect_typedef
-                sample_value = serialize_value(indirect_typedef, point['Value'].value, type_definitions)
-
-                d = {'Time': str(sample_time), 'Value' : sample_value}
-                if 'ControlPointPointProperties' in point:
-                    for point_prop in point['ControlPointPointProperties']:
-                        type_definitions[indirect_typedef.auid] = point_prop.typedef.auid
-                        d[p.name] = serialize_value(point_prop.typedef, point_prop.value, type_definitions)
-
-                varying_values.append(d)
-
-            value.append(varying_values)
-            assert p.interpolation.name in ('LinearInterp', 'ConstantInterp', 'AvidCubicInterpolator', 'AvidBezierInterpolator')
-
-        elif isinstance(p, aaf2.misc.ConstantValue):
-            value.append("ConstantValue")
-            value.extend(serialize_value(p.typedef, p.value, type_definitions))
-
-        else:
-            assert False
-
-        parameters.append(value)
-
-    parameters_defs = {}
-    for key, p in parameter_definitions.items():
-        type_definitions[p.typedef.auid] = p.typedef
-        value = [serialize_auid(p.typedef.auid,  p.typedef.type_name),  p.name, p.description]
-        parameters_defs[str(key)] = value
-
-
+def format_typedefs(type_definitions):
     types = {}
-
     for key, typedef in type_definitions.items():
         if isinstance(typedef, aaf2.types.TypeDefInt):
             if 'ints' not in types:
@@ -224,6 +121,118 @@ def extract_operation(op_group):
         else:
             print(typedef)
             assert False
+
+    return types
+
+def extract_operation(op_group):
+    op_def = op_group.operation
+
+    parameter_definitions = {}
+    type_definitions = {}
+    data_definitions = {}
+
+    operation_group_name = None
+
+    # for key in op_group.keys():
+    #     if key not in ( 'Parameters', 'InputSegments', 'Operation', 'Length', 'DataDefinition', 'ComponentAttributeList', 'OpGroupMotionCtlOffsetMapAdjust'):
+    #         print("??", key)
+    #         op_group.dump()
+    #         assert False
+    #         pass
+
+    d = {}
+    for p in op_def.properties():
+        # print(p.name, p.value)
+
+        if p.name == 'ParametersDefined':
+            params = []
+            for param_def in p.value:
+                param_id = param_def.auid
+                parameter_definitions[param_id] =  param_def
+                params.append(serialize_auid(param_id, param_def.name))
+
+            d[p.name] = params
+
+        elif p.name in ("DataDefinition",):
+            d[p.name] = str(p.value.name)
+        elif p.name in ('Identification',):
+            d[p.name] = str(p.value)
+        else:
+            d[p.name] = p.value
+
+    # op_group.dump()
+
+    operation_group_name = d['Name']
+    operation_def = d
+
+
+    d = {}
+
+    for t in op_group.get('ComponentAttributeList', []):
+        type_name = t.value_typedef.type_name
+        type_definitions[t.value_typedef.auid] = t.value_typedef
+        d[t.name] = serialize_value(t.value_typedef, t.value, type_definitions)
+
+    component_attrs = d
+
+    parameters = []
+    for p in op_group["Parameters"]:
+        param_def = p.parameterdef
+        parameter_definitions[param_def.auid] = param_def
+        pretty_param_name = serialize_auid(param_def.auid, param_def.name)
+
+        value = [pretty_param_name]
+        if isinstance(p, aaf2.misc.VaryingValue):
+            typedef = p.typedef
+            type_name = typedef.type_name
+            type_definitions[typedef.auid] = typedef
+
+            pretty_type_name = serialize_auid(typedef.auid,  type_name)
+            value.append("VaryingValue")
+            value.append(pretty_type_name)
+
+            value.append(p.interpolation.name or str(p.interpolation.auid))
+            varying_values = []
+
+            for point in p.pointlist:
+                sample_time = point['Time'].value
+
+                # wow this is annoying
+                indirect_typedef = point['Value'].typedef.decode_typedef(point['Value'].data)
+                type_definitions[indirect_typedef.auid] = indirect_typedef
+                sample_value = serialize_value(indirect_typedef, point['Value'].value, type_definitions)
+
+                d = {'Time': str(sample_time), 'Value' : sample_value}
+                if 'ControlPointPointProperties' in point:
+                    for point_prop in point['ControlPointPointProperties']:
+                        type_definitions[indirect_typedef.auid] = point_prop.typedef.auid
+                        d[p.name] = serialize_value(point_prop.typedef, point_prop.value, type_definitions)
+
+                varying_values.append(d)
+
+            value.append(varying_values)
+            # if p.interpolation.name not in ('LinearInterp', 'ConstantInterp', 'AvidCubicInterpolator', 'AvidBezierInterpolator'):
+
+
+            #     raise Exception("Unknown interp: {}".format(p.interpolation))
+
+        elif isinstance(p, aaf2.misc.ConstantValue):
+            value.append("ConstantValue")
+            value.extend(serialize_value(p.typedef, p.value, type_definitions))
+
+        else:
+            assert False
+
+        parameters.append(value)
+
+    parameters_defs = {}
+    for key, p in parameter_definitions.items():
+        type_definitions[p.typedef.auid] = p.typedef
+        value = [serialize_auid(p.typedef.auid,  p.typedef.type_name),  p.name, p.description]
+        parameters_defs[str(key)] = value
+
+
+    types = format_typedefs(type_definitions)
 
     result = {}
     result['TypeDefinitions'] = types
@@ -271,10 +280,26 @@ def extract_operation_group(f, json_file):
         operation_name, data = extract_operation(op)
         extracted_operations[operation_name] = data
 
-    data = {'name': operation_mob_name, 'operations': extracted_operations}
+    # export all the ParameterDefinitions in the file too
+    parameter_defs = {}
+    type_definitions = {}
+    for p in f.dictionary['ParameterDefinitions']:
+        type_definitions[p.typedef.auid] = p.typedef
+        value = [serialize_auid(p.typedef.auid,  p.typedef.type_name),  p.name, p.description]
+        parameter_defs[str(p.auid)] = value
+
+    types = format_typedefs(type_definitions)
+
+    data = {'name': operation_mob_name, 'operations': extracted_operations, 'parameter_definitions': parameter_defs, 'typedefs': types}
     # pprint(data)
     with open(json_file, 'w') as outfile:
         json.dump(data, outfile, indent=4)
+
+
+def extract(aaf_file, json_file):
+    print(aaf_file)
+    with aaf2.open(aaf_file) as f:
+        extract_operation_group(f, json_file)
 
 
 if __name__ == "__main__":
@@ -282,15 +307,20 @@ if __name__ == "__main__":
     dir_path = sys.argv[1]
     assert os.path.isdir(dir_path)
 
-    for root, dirs, files in os.walk(dir_path, topdown=False):
-        for filename in files:
-            name, ext = os.path.splitext(filename)
-            aaf_file = os.path.join(root, filename)
-            json_file = os.path.join(root, name + ".json")
+    futures = []
+    with ProcessPoolExecutor() as executor:
 
-            if ext.lower() in ('.aaf',) and name[0] != '.':
-                print(aaf_file)
-                with aaf2.open(aaf_file) as f:
-                    extract_operation_group(f, json_file)
+        for root, dirs, files in os.walk(dir_path, topdown=False):
+            for filename in files:
+                name, ext = os.path.splitext(filename)
+                aaf_file = os.path.join(root, filename)
+                json_file = os.path.join(root, name + ".json")
 
-                # print("")
+                if ext.lower() in ('.aaf',) and name[0] != '.':
+                    # extract(aaf_file, json_file)
+                    fut = executor.submit(extract, aaf_file, json_file)
+                    futures.append(fut)
+
+
+        for f in as_completed(futures):
+            f.result()

@@ -270,5 +270,135 @@
                 ]
             ]
         }
+    },
+    "parameter_definitions": {
+        "63e1560b-41e1-44d7-90e5-ac2115a3a004": [
+            "01010700-0000-0000-060e-2b3401040101 aafInt32",
+            "Luma Units",
+            ""
+        ],
+        "3af5331c-fb93-4b15-b243-4dbcde225e29": [
+            "03010100-0000-0000-060e-2b3401040101 Rational",
+            "Composite L",
+            ""
+        ],
+        "42401321-789e-477a-a43c-db24333a5990": [
+            "03010100-0000-0000-060e-2b3401040101 Rational",
+            "Luma L",
+            ""
+        ],
+        "aea1f133-b100-4326-93b6-1e1ef167e053": [
+            "03010100-0000-0000-060e-2b3401040101 Rational",
+            "RGB Gamut H",
+            ""
+        ],
+        "6aac2758-bd13-4052-8ec6-b620a6d0ce6b": [
+            "03010100-0000-0000-060e-2b3401040101 Rational",
+            "Luma H",
+            ""
+        ],
+        "8ba0916a-7c0b-41e4-b2da-c817048cbf5d": [
+            "03010100-0000-0000-060e-2b3401040101 Rational",
+            "AFX_TRANS_LEN",
+            ""
+        ],
+        "c0038672-a8cf-11d3-a05b-006094eb75cb": [
+            "01010200-0000-0000-060e-2b3401040101 aafUInt16",
+            "AvidParameterByteOrder",
+            ""
+        ],
+        "62e88677-030c-4a96-899a-d6402faf3190": [
+            "03010100-0000-0000-060e-2b3401040101 Rational",
+            "Composite H",
+            ""
+        ],
+        "e9e9f37e-1029-4cf3-8ab8-6ec719e07647": [
+            "01010700-0000-0000-060e-2b3401040101 aafInt32",
+            "AvidDefaultPan",
+            ""
+        ],
+        "e90b5f85-51a5-4c8c-897d-5dd632fefb5e": [
+            "01010700-0000-0000-060e-2b3401040101 aafInt32",
+            "RGB Units",
+            ""
+        ],
+        "bc5e1686-0611-4d16-8df5-811f5f50ec8d": [
+            "01010700-0000-0000-060e-2b3401040101 aafInt32",
+            "Composite Units",
+            ""
+        ],
+        "93994bd6-a81d-11d3-a05b-006094eb75cb": [
+            "ccaa73d1-f538-11d3-a081-006094eb75cb AvidBagOfBits",
+            "AvidEffectID",
+            ""
+        ],
+        "8af7a5dc-367b-4919-afc7-5ca00a5bd558": [
+            "01010700-0000-0000-060e-2b3401040101 aafInt32",
+            "MC AVX2 EFFECT VERSION",
+            ""
+        ],
+        "c72888dd-e6d7-4dce-85ce-cece8c2949e5": [
+            "3659b342-4f19-4316-9309-f139434a94e5 AvidPannerKindType",
+            "AvidPannerKind",
+            ""
+        ],
+        "e5a302fe-22ed-40ab-ba0a-663f6bcc1dc9": [
+            "03010100-0000-0000-060e-2b3401040101 Rational",
+            "RGB Gamut L",
+            ""
+        ]
+    },
+    "typedefs": {
+        "ints": {
+            "aafInt32": [
+                "01010700-0000-0000-060e-2b3401040101",
+                4,
+                true
+            ],
+            "aafUInt16": [
+                "01010200-0000-0000-060e-2b3401040101",
+                2,
+                false
+            ]
+        },
+        "records": {
+            "Rational": [
+                "03010100-0000-0000-060e-2b3401040101",
+                [
+                    [
+                        "Numerator",
+                        "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                    ],
+                    [
+                        "Denominator",
+                        "01010700-0000-0000-060e-2b3401040101 aafInt32"
+                    ]
+                ]
+            ]
+        },
+        "var_arrays": {
+            "AvidBagOfBits": [
+                "ccaa73d1-f538-11d3-a081-006094eb75cb",
+                "01010100-0000-0000-060e-2b3401040101 aafUInt8"
+            ]
+        },
+        "enums": {
+            "AvidPannerKindType": [
+                "3659b342-4f19-4316-9309-f139434a94e5",
+                "01010300-0000-0000-060e-2b3401040101 aafUInt32",
+                {
+                    "1": "AvidPannerKind_Stereo",
+                    "2": "AvidPannerKind_LCR",
+                    "3": "AvidPannerKind_Quad",
+                    "4": "AvidPannerKind_LCRS",
+                    "5": "AvidPannerKind_5dot0",
+                    "6": "AvidPannerKind_5dot1",
+                    "7": "AvidPannerKind_6dot0",
+                    "8": "AvidPannerKind_6dot1",
+                    "9": "AvidPannerKind_7dot0",
+                    "10": "AvidPannerKind_7dot1"
+                }
+            ]
+        }
     }
 }
